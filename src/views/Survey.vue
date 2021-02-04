@@ -21,7 +21,6 @@
 </template>
 
 <script>
-
 import MultipleChoice from "@/components/MultipleChoice.vue";
 import axios from "axios";
 export default {
@@ -66,7 +65,7 @@ export default {
         })
         .finally(() => {
           this.loading = false;
-      });
+        });
     }
   }
 };

@@ -36,7 +36,7 @@ export default {
   name: "MultipleChoice",
   data() {
     return {
-      answers: [],
+      answers: []
     };
   },
   props: {
@@ -48,8 +48,8 @@ export default {
   methods: {
     saveAnswer(e) {
       this.$emit("sendAnswer", this.id, e.target.id, e.target.value);
-    },
-  },
+    }
+  }
 };
 </script>
 
