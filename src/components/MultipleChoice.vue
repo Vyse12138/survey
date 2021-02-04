@@ -1,12 +1,15 @@
 <template>
   <div class="MultipleChoice">
+    <!-- question and * mark -->
     <h2 class="questionHeading">
       {{ body }}
       <span class="isCompulsory" v-if="isCompulsory">*</span>
     </h2>
+    <!-- table for choices -->
     <table class="questionBody">
       <tr>
         <th></th>
+        <!-- given options -->
         <th
           class="option"
           v-for="option in items[0].options"
@@ -15,14 +18,16 @@
           {{ option }}
         </th>
       </tr>
+      <!-- each item and its radios input -->
       <tr class="choice" v-for="item in items" v-bind:key="item">
         <th>{{ item.name }}</th>
         <td class="option" v-for="option in item.options" v-bind:key="option">
+          <!-- binding input id, name and value -->
           <input
             type="radio"
             :id="item.id"
             :value="option"
-            :name="id + item.name"
+            :name="id + '-' + item.name"
             @click="saveAnswer"
           />
         </td>
@@ -34,11 +39,6 @@
 <script>
 export default {
   name: "MultipleChoice",
-  data() {
-    return {
-      answers: []
-    };
-  },
   props: {
     body: String,
     isCompulsory: Number,
@@ -46,6 +46,7 @@ export default {
     id: String
   },
   methods: {
+    // update answer
     saveAnswer(e) {
       this.$emit("sendAnswer", this.id, e.target.id, e.target.value);
     }

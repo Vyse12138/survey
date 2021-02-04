@@ -1,17 +1,35 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Vue.js App" />
+    <router-link to="/survey" class="button">
+      SURVEY
+    </router-link>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "Home",
-  components: {
-    HelloWorld
-  }
+  name: "Home"
 };
 </script>
+
+<style lang="scss" scoped>
+.button {
+  background-color: red;
+  box-shadow: 0 10px 0 darkred;
+  color: white;
+  padding: 1em;
+  margin: 20px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #ce0606;
+}
+
+.button:active {
+  box-shadow: none;
+  top: 10px;
+}
+</style>
