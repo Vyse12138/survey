@@ -14,22 +14,22 @@ export default {
 
 <style lang="scss" scoped>
 .button {
-  background-color: red;
-  box-shadow: 0 10px 0 darkred;
+  display: inline-block;
+  background-color: #4caf50;
+  box-shadow: 0 8px 0 #999;
   color: white;
   padding: 1em;
   margin: 20px;
   position: relative;
   text-decoration: none;
   border-radius: 10px;
-}
-
-.button:hover {
-  background-color: #ce0606;
-}
-
-.button:active {
-  box-shadow: none;
-  top: 10px;
+  &:hover {
+    background-color: #3e8e41;
+  }
+  &:active {
+    box-shadow: 0 5px #666;
+    background-color: #3e8e41;
+    transform: translateY(4px);
+  }
 }
 </style>
