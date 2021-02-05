@@ -21,10 +21,9 @@
         <td>
           <input
             type="radio"
-            :id="items[0].name"
             :value="option"
-            :name="id + '-' + items[0].name"
-            @click="saveAnswer"
+            :name="id"
+            @click="saveAnswerWithSingleItem"
           />
         </td>
       </tr>
@@ -52,7 +51,7 @@
             :id="item.name"
             :value="option"
             :name="id + '-' + item.name"
-            @click="saveAnswer"
+            @click="saveAnswerWithMultipleItems"
           />
         </td>
       </tr>
@@ -72,8 +71,16 @@ export default {
   },
   methods: {
     // update answer
-    saveAnswer(e) {
-      this.$emit("sendAnswer", this.id, e.target.id, e.target.value);
+    saveAnswerWithSingleItem(e) {
+      this.$emit("saveAnswerWithSingleItem", this.id, e.target.value);
+    },
+    saveAnswerWithMultipleItems(e) {
+      this.$emit(
+        "saveAnswerWithMultipleItems",
+        this.id,
+        e.target.id,
+        e.target.value
+      );
     }
   }
 };

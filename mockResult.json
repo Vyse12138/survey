@@ -1,55 +1,23 @@
-
-Get("/data", p =>
-{
-TMASurvey survey = new TMASurvey
-{
-  Title = "test title",
-  Description = "test description",
-  Questions = new List<Question>
-  {
-  new Question{Body="Q1.  We consider our current overall turnover to be:",IsCompulsory = 1
-  ,Items =new List<ItemOfQuestion>
-    {
-    new ItemOfQuestion{Options = new List<string>
-      {"very pool","poor","average" } }
-      } },
-      new Question{Body="Q2. Overall turnover:",IsCompulsory = 1
-      ,Items =new List<ItemOfQuestion>
-        {
-        new ItemOfQuestion{Options = new List<string>
-          {"very pool","poor","average" } },
-          new ItemOfQuestion{Options = new List<string>
-            {"very pool","poor","average" }
-        }     
-      }
-    }
-  }
-};
-return Response.AsJson(survey);
-
-
 // mock api address:
-https://run.mocky.io/v3/878f959c-439a-4e3f-be66-5075fdcc84d8
-
-
-{ 
+https: //run.mocky.io/v3/878f959c-439a-4e3f-be66-5075fdcc84d8
+// some mock data
+{
   "title": "test title",
   "description": "test description",
-  "questions": 
-  [
+  "results": [
     {
       "id": "1",
-      "body": "Q1. Overall turnover:",
-      "isCompulsory": 1,
+      "questions": "Q1. Overall turnover:",
       "items": [
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
-          "answer": null,
-          "name": "shad"
+          "name": "shad",
+          "result": {
+            "very pool": 21,
+            "poor": 45,
+            "average": 66,
+            "good": 92,
+            "very good": 30
+          }
         }
       ]
     },

@@ -17,7 +17,8 @@
     <MultipleChoice
       v-for="question in questions"
       v-bind:key="question.id"
-      @sendAnswer="saveAnswer"
+      @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
+      @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
       :body="question.body"
       :isCompulsory="question.isCompulsory"
       :items="question.items"
@@ -79,7 +80,10 @@ export default {
   },
   methods: {
     // update answer at radio checked
-    saveAnswer(questionID, itemID, value) {
+    saveAnswerWithSingleItem(questionID, value) {
+      this.questions.find(e => e.id === questionID).items[0].answer = value;
+    },
+    saveAnswerWithMultipleItems(questionID, itemID, value) {
       this.questions
         .find(e => e.id === questionID)
         .items.find(e => e.name === itemID).answer = value;
