@@ -23,12 +23,6 @@ export default {
     body: String,
     isCompulsory: String,
     unfinished: Boolean
-  },
-  methods: {
-    // update answer
-    saveAnswer(e) {
-      this.$emit("sendAnswer", this.id, e.target.id, e.target.value);
-    }
   }
 };
 </script>

@@ -9,13 +9,13 @@
 
     <!-- survey heading section -->
     <div class="heading" v-if="!loading && !error">
-      <h1>{{ title }}</h1>
-      <h3>{{ description }}</h3>
+      <h1>{{ data.title }}</h1>
+      <h3>{{ data.description }}</h3>
     </div>
 
     <!-- questions section -->
     <MultipleChoice
-      v-for="question in questions"
+      v-for="question in data.questions"
       v-bind:key="question.id"
       @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
       @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
@@ -52,9 +52,24 @@ export default {
   data() {
     return {
       //response data
-      title: "",
-      description: "",
-      questions: [],
+      data: {
+        title: "",
+        description: "",
+        questions: [
+          {
+            id: "",
+            body: "",
+            isCompulsory: 0,
+            items: [
+              {
+                name: "",
+                answer: null,
+                options: []
+              }
+            ]
+          }
+        ]
+      },
       //indicator for loading and fetching error
       loading: true,
       error: false,
@@ -67,9 +82,7 @@ export default {
     axios
       .get("https://run.mocky.io/v3/02101cdd-2ce1-48ab-8fd3-dd83b097e20e")
       .then(response => {
-        this.title = response.data.title;
-        this.description = response.data.description;
-        this.questions = response.data.questions;
+        this.data = response.data;
       })
       .catch(() => {
         this.error = true;
@@ -81,10 +94,12 @@ export default {
   methods: {
     // update answer at radio checked
     saveAnswerWithSingleItem(questionID, value) {
-      this.questions.find(e => e.id === questionID).items[0].answer = value;
+      this.data.questions.find(
+        e => e.id === questionID
+      ).items[0].answer = value;
     },
     saveAnswerWithMultipleItems(questionID, itemID, value) {
-      this.questions
+      this.data.questions
         .find(e => e.id === questionID)
         .items.find(e => e.name === itemID).answer = value;
     },
@@ -92,7 +107,7 @@ export default {
     submitSurvey(e) {
       e.preventDefault();
       // input validation to ensure every compulsory question is answered
-      this.questions.forEach(question => {
+      this.data.questions.forEach(question => {
         if (question.isCompulsory === 1) {
           question.items.forEach(item => {
             this.unfinished[question.id] = false;
@@ -111,16 +126,16 @@ export default {
       });
       // post answers to server
       axios
-        .post("url goes here", this.questions)
+        .post("url goes here", this.data)
         .then(() => {
           // testing
-          console.log(this.questions);
+          console.log(this.data);
           alert("Submit successful");
           this.$router.push("/result");
         })
         .catch(() => {
           // testing
-          console.log(this.questions);
+          console.log(this.data);
           alert("submit failed");
           this.$router.push("/result");
         });
