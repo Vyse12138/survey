@@ -3,15 +3,15 @@
     <!-- front image -->
     <div class="frontImg" />
 
-    <!-- survey heading section -->
-    <div class="heading">
-      <h1>Survey</h1>
-      <h3>Description</h3>
-    </div>
-
     <!-- loading and error indicator section -->
     <h2 class="loading" v-if="loading">Loading...</h2>
     <h2 class="loading" v-if="error">There was some error...</h2>
+
+    <!-- survey heading section -->
+    <div class="heading" v-if="!loading && !error">
+      <h1>{{ title }}</h1>
+      <h3>{{ description }}</h3>
+    </div>
 
     <!-- questions section -->
     <MultipleChoice
@@ -26,7 +26,7 @@
     />
     <OpenEnded
       body="Any feedback?"
-      isCompulsory="1"
+      isCompulsory="0"
       :unfinished="false"
       v-if="!loading && !error"
     />
@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import MultipleChoice from "@/components/MultipleChoice.vue";
-import OpenEnded from "@/components/OpenEnded.vue";
+import MultipleChoice from "@/components/Survey/MultipleChoice.vue";
+import OpenEnded from "@/components/Survey/OpenEnded.vue";
 import axios from "axios";
 
 export default {
@@ -50,7 +50,9 @@ export default {
   },
   data() {
     return {
-      //questions data
+      //response data
+      title: "",
+      description: "",
       questions: [],
       //indicator for loading and fetching error
       loading: true,
@@ -62,9 +64,11 @@ export default {
   mounted() {
     // fetching data from api
     axios
-      .get("https://601b7c3559fa2c0017560ad0.mockapi.io/questions")
+      .get("https://run.mocky.io/v3/3450b206-246f-4c05-bfb9-41e1a165700e")
       .then(response => {
-        this.questions = response.data;
+        this.title = response.data.title;
+        this.description = response.data.description;
+        this.questions = response.data.questions;
       })
       .catch(() => {
         this.error = true;
@@ -95,8 +99,8 @@ export default {
                   behavior: "smooth",
                   block: "center"
                 });
-              }, 100);
-              throw Error;
+              }, 0);
+              throw new Error("A compulsory question is not being answered.");
             }
           });
         }
@@ -105,12 +109,16 @@ export default {
       axios
         .post("url goes here", this.questions)
         .then(() => {
+          // testing
           console.log(this.questions);
           alert("Submit successful");
+          this.$router.push("/result");
         })
         .catch(() => {
+          // testing
           console.log(this.questions);
           alert("submit failed");
+          this.$router.push("/result");
         });
     }
   }
@@ -118,6 +126,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 .home {
   width: 60%;
   margin-left: auto;

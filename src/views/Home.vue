@@ -3,10 +3,12 @@
     <router-link to="/survey" class="button">
       SURVEY
     </router-link>
+    
   </div>
 </template>
 
 <script>
+
 export default {
   name: "Home"
 };

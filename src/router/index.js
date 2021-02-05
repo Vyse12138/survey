@@ -12,9 +12,9 @@ const routes = [
     component: () => import("../views/Survey.vue")
   },
   {
-    path: "/about",
+    path: "/result",
     // route level code-splitting, lazy-loaded when visited.
-    component: () => import("../views/About.vue")
+    component: () => import("../views/Result.vue")
   }
 ];
 

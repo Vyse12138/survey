@@ -3,7 +3,7 @@
     <!-- question and * mark -->
     <h3 class="questionBody">
       {{ body }}
-      <span class="isCompulsory" v-if="isCompulsory">*</span>
+      <span class="isCompulsory" v-if="isCompulsory === '1'">*</span>
     </h3>
 
     <!-- warning section if required question is not being answered -->
