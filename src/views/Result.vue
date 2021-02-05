@@ -1,7 +1,19 @@
 <template>
   <div class="result">
-    <h1>Survey Result</h1>
-    <PieChart />
+    <!-- survey heading section -->
+    <div class="heading">
+      <h1>{{ title }}</h1>
+      <h3>{{ description }}</h3>
+    </div>
+
+    <!-- pie charts -->
+    <PieChart
+      v-for="result in results"
+      v-bind:key="result.id"
+      :question="result.question"
+      :items="result.items"
+      :id="result.id"
+    />
   </div>
 </template>
 
@@ -19,7 +31,7 @@ export default {
       //response data
       title: "",
       description: "",
-      questions: [],
+      results: [],
       //indicator for loading and fetching error
       loading: true,
       error: false
@@ -28,11 +40,12 @@ export default {
   mounted() {
     // fetching data from api
     axios
-      .get("https://run.mocky.io/v3/3450b206-246f-4c05-bfb9-41e1a165700e")
+      .get("https://run.mocky.io/v3/b460d16c-562a-4057-9752-999ed54f7cc3")
       .then(response => {
         this.title = response.data.title;
         this.description = response.data.description;
-        this.questions = response.data.questions;
+        this.results = response.data.results;
+        console.log(this.results[0])
       })
       .catch(() => {
         this.error = true;
@@ -40,60 +53,12 @@ export default {
       .finally(() => {
         this.loading = false;
       });
-  },
-  methods: {
-    // update answer at radio checked
-    saveAnswer(questionID, itemID, value) {
-      this.questions
-        .find(e => e.id === questionID)
-        .items.find(e => e.name === itemID).answer = value;
-    },
-    // function to post data
-    submitSurvey(e) {
-      e.preventDefault();
-      // input validation to ensure every compulsory question is answered
-      this.questions.forEach(question => {
-        if (question.isCompulsory === 1) {
-          question.items.forEach(item => {
-            this.unfinished[question.id] = false;
-            if (item.answer === null) {
-              this.unfinished[question.id] = true;
-              setTimeout(() => {
-                document.getElementById(question.id).scrollIntoView({
-                  behavior: "smooth",
-                  block: "center"
-                });
-              }, 0);
-              throw new Error("A compulsory question is not being answered.");
-            }
-          });
-        }
-      });
-      // post answers to server
-      axios
-        .post("url goes here", this.questions)
-        .then(() => {
-          // testing
-          console.log(this.questions);
-          alert("Submit successful");
-          this.$router.push("/result");
-        })
-        .catch(() => {
-          // testing
-          console.log(this.questions);
-          alert("submit failed");
-          this.$router.push("/result");
-        });
-    }
   }
 };
 </script>
 
 <style scoped lang="scss">
-html {
-  scroll-behavior: smooth;
-}
-.home {
+.result {
   width: 60%;
   margin-left: auto;
   margin-right: auto;

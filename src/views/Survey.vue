@@ -65,7 +65,7 @@ export default {
   mounted() {
     // fetching data from api
     axios
-      .get("https://run.mocky.io/v3/3450b206-246f-4c05-bfb9-41e1a165700e")
+      .get("https://run.mocky.io/v3/02101cdd-2ce1-48ab-8fd3-dd83b097e20e")
       .then(response => {
         this.title = response.data.title;
         this.description = response.data.description;
@@ -130,9 +130,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-html {
-  scroll-behavior: smooth;
-}
 .home {
   width: 60%;
   margin-left: auto;
