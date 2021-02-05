@@ -7,34 +7,34 @@
     <h2 class="loading" v-if="loading">Loading...</h2>
     <h2 class="loading" v-if="error">There was some error...</h2>
 
-    <!-- survey heading section -->
-    <div class="heading" v-if="!loading && !error">
-      <h1>{{ data.title }}</h1>
-      <h3>{{ data.description }}</h3>
-    </div>
+    <!-- survey section -->
+    <div v-if="!loading && !error">
+      <!-- survey heading section -->
+      <div class="heading" v-if="!loading && !error">
+        <h1>{{ data.title }}</h1>
+        <h3>{{ data.description }}</h3>
+      </div>
 
-    <!-- questions section -->
-    <MultipleChoice
-      v-for="question in data.questions"
-      v-bind:key="question.id"
-      @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
-      @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
-      :body="question.body"
-      :isCompulsory="question.isCompulsory"
-      :items="question.items"
-      :id="question.id"
-      :unfinished="unfinished[question.id]"
-    />
-    <OpenEnded
-      body="Any feedback?"
-      isCompulsory="0"
-      :unfinished="false"
-      v-if="!loading && !error"
-    />
-    <!-- show submit button when not loading and no error -->
-    <button class="submit" v-if="!loading && !error" v-on:click="submitSurvey">
-      submit
-    </button>
+      <!-- question section -->
+      <MultipleChoice
+        v-for="question in data.questions"
+        v-bind:key="question.id"
+        @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
+        @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
+        :body="question.body"
+        :isCompulsory="question.isCompulsory"
+        :items="question.items"
+        :id="question.id"
+        :unfinished="unfinished[question.id]"
+      />
+
+      <OpenEnded body="Any feedback?" isCompulsory="0" :unfinished="false" />
+
+      <!-- show submit button when not loading and no error -->
+      <button class="submit" v-on:click="submitSurvey">
+        submit
+      </button>
+    </div>
   </div>
 </template>
 
