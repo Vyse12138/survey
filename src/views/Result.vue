@@ -113,7 +113,7 @@ export default {
   }
 }
 @media (max-width: 1024px) {
-  .home {
+  .result {
     width: 100%;
   }
 }

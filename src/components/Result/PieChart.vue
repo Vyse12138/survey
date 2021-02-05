@@ -2,8 +2,17 @@
   <div class="pieChart">
     <!-- question and * mark -->
     <h3 class="question">{{ question }}</h3>
-    <h5 class="question">{{ response.get(items[0].name) }} respones</h5>
-    
+    <p class="question">{{ response.get(items[0].name) }} respones</p>
+    <div class="table" v-for="item in items" v-bind:key="item.name">
+      <div class="pie"></div>
+      <div class="info">
+        <p>{{ item.name }}</p>
+        <p v-for="(value, option) in item.result" v-bind:key="option"> 
+          {{ option }}: {{ value }}
+        </p>
+      </div>
+      <div class="a" />
+    </div>
   </div>
 </template>
 
@@ -13,7 +22,7 @@ export default {
   data() {
     return {
       response: new Map()
-    }
+    };
   },
   props: {
     question: String,
@@ -46,23 +55,29 @@ export default {
   // question heading
   .question {
     text-align: left;
-    .isCompulsory {
-      color: red;
+    font-weight: bold;
+  }
+  .table {
+    .pie {
+      float: left;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: yellowgreen;
+      margin: 20px 50px;
+      background: conic-gradient(deeppink 20%, #fb3 0, #fb3 30%, yellowgreen 0);
+    }
+    .info {
+      width: 40%;
+      float: right;
+      text-align: left;
+      font-weight: bold;
+    }
+    .a {
+      height: 20px;
+      clear: both;
     }
   }
-  // warning
-  .required {
-    background-color: #ff9800;
-    color: white;
-    border-radius: 10px;
-    padding: 0px 30px;
-    opacity: 0.66;
-    float: left;
-  }
-  // input
-  .input {
-    width: 100%;
-    margin: 15px 0;
-  }
+
 }
 </style>
