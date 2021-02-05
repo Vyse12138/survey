@@ -45,7 +45,6 @@ export default {
         this.title = response.data.title;
         this.description = response.data.description;
         this.results = response.data.results;
-        console.log(this.results[0])
       })
       .catch(() => {
         this.error = true;

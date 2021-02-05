@@ -7,7 +7,7 @@
       <div class="pie"></div>
       <div class="info">
         <p>{{ item.name }}</p>
-        <p v-for="(value, option) in item.result" v-bind:key="option"> 
+        <p v-for="(value, option) in item.result" v-bind:key="option">
           {{ option }}: {{ value }}
         </p>
       </div>
@@ -38,7 +38,7 @@ export default {
       }
       this.response.set(item.name, responseCount);
     });
-  },
+  }
 };
 </script>
 
@@ -78,6 +78,5 @@ export default {
       clear: both;
     }
   }
-
 }
 </style>
