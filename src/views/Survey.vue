@@ -22,9 +22,14 @@
       :isCompulsory="question.isCompulsory"
       :items="question.items"
       :id="question.id"
-      :finished="required[question.id]"
+      :unfinished="unfinished[question.id]"
     />
-
+    <OpenEnded
+      body="Any feedback?"
+      isCompulsory="1"
+      :unfinished="false"
+      v-if="!loading && !error"
+    />
     <!-- show submit button when not loading and no error -->
     <button class="submit" v-if="!loading && !error" v-on:click="submitSurvey">
       submit
@@ -34,12 +39,14 @@
 
 <script>
 import MultipleChoice from "@/components/MultipleChoice.vue";
+import OpenEnded from "@/components/OpenEnded.vue";
 import axios from "axios";
 
 export default {
   name: "Home",
   components: {
-    MultipleChoice
+    MultipleChoice,
+    OpenEnded
   },
   data() {
     return {
@@ -49,7 +56,7 @@ export default {
       loading: true,
       error: false,
       //indicator for unfinished compulsory questions
-      required: []
+      unfinished: []
     };
   },
   mounted() {
@@ -80,9 +87,9 @@ export default {
       this.questions.forEach(question => {
         if (question.isCompulsory === 1) {
           question.items.forEach(item => {
-            this.required[question.id] = false;
+            this.unfinished[question.id] = false;
             if (item.answer === null) {
-              this.required[question.id] = true;
+              this.unfinished[question.id] = true;
               setTimeout(() => {
                 document.getElementById(question.id).scrollIntoView({
                   behavior: "smooth",

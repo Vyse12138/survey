@@ -1,13 +1,13 @@
 <template>
-  <div class="MultipleChoice">
+  <div class="multipleChoice">
     <!-- question and * mark -->
-    <h3 class="questionHeading">
+    <h3 class="questionBody">
       {{ body }}
       <span class="isCompulsory" v-if="isCompulsory">*</span>
     </h3>
 
     <!-- warning section if required question is not being answered -->
-    <div :id="id" class="required" v-if="finished">
+    <div :id="id" class="required" v-if="unfinished">
       <h3>Please finish this question!</h3>
     </div>
 
@@ -68,7 +68,7 @@ export default {
     isCompulsory: Number,
     items: Array,
     id: String,
-    finished: Boolean
+    unfinished: Boolean
   },
   methods: {
     // update answer
@@ -81,7 +81,7 @@ export default {
 
 <style scoped lang="scss">
 // question box
-.MultipleChoice {
+.multipleChoice {
   margin: 20px 0;
   padding: 20px;
   padding-top: 10px;
@@ -90,7 +90,7 @@ export default {
   border-left: 10px solid #4285f4;
   border-radius: 10px;
   // question heading
-  .questionHeading {
+  .questionBody {
     text-align: left;
     .isCompulsory {
       color: red;
