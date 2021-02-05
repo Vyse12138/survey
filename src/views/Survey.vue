@@ -1,13 +1,18 @@
 <template>
   <div class="home">
+    <!-- front image -->
     <div class="frontImg" />
+
+    <!-- survey heading section -->
     <div class="heading">
       <h1>Survey</h1>
       <h3>Description</h3>
     </div>
-    <!-- loading and error section -->
+
+    <!-- loading and error indicator section -->
     <h2 class="loading" v-if="loading">Loading...</h2>
     <h2 class="loading" v-if="error">There was some error...</h2>
+
     <!-- questions section -->
     <MultipleChoice
       v-for="question in questions"
@@ -19,6 +24,7 @@
       :id="question.id"
       :finished="required[question.id]"
     />
+
     <!-- show submit button when not loading and no error -->
     <button class="submit" v-if="!loading && !error" v-on:click="submitSurvey">
       submit
@@ -29,6 +35,7 @@
 <script>
 import MultipleChoice from "@/components/MultipleChoice.vue";
 import axios from "axios";
+
 export default {
   name: "Home",
   components: {
@@ -36,9 +43,12 @@ export default {
   },
   data() {
     return {
+      //questions data
       questions: [],
+      //indicator for loading and fetching error
       loading: true,
       error: false,
+      //indicator for unfinished compulsory questions
       required: []
     };
   },
@@ -89,12 +99,11 @@ export default {
         .post("url goes here", this.questions)
         .then(() => {
           console.log(this.questions);
-          alert("Submitted");
+          alert("Submit successful");
         })
         .catch(() => {
           console.log(this.questions);
-          //this.error = true;
-          //alert("submit failed");
+          alert("submit failed");
         });
     }
   }

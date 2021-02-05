@@ -11,7 +11,7 @@
       <h3>Please finish this question!</h3>
     </div>
 
-    <!-- question items section -->
+    <!-- question items section: -->
 
     <!-- 1. question with one item -->
     <table class="questionItem" v-if="items.length === 1">
@@ -32,21 +32,20 @@
 
     <!-- 2. question with multiple items -->
     <table class="questionItems" v-if="items.length !== 1">
+      <!-- row for the options -->
       <tr>
         <th></th>
         <!-- given options -->
-        <th
-          class="choice"
-          v-for="option in items[0].options"
-          v-bind:key="option"
-        >
+        <th v-for="option in items[0].options" v-bind:key="option">
           {{ option }}
         </th>
       </tr>
       <!-- each item and its radios input -->
       <tr class="choice" v-for="item in items" v-bind:key="item">
+        <!-- item name -->
         <th>{{ item.name }}</th>
-        <td class="option" v-for="option in item.options" v-bind:key="option">
+        <!-- radio inputs -->
+        <td v-for="option in item.options" v-bind:key="option">
           <!-- binding input id, name and value -->
           <input
             type="radio"
