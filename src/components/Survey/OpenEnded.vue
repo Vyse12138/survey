@@ -35,7 +35,10 @@ export default {
   padding-top: 10px;
   box-shadow: 0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125);
   background-color: white;
-  border-left: 10px solid #4285f4;
+  border-left: 10px solid white;
+  &:hover {
+    border-left: 10px solid #4285f4;
+  }
   border-radius: 10px;
   // question heading
   .questionBody {
