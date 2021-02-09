@@ -15,7 +15,7 @@
 
     <!-- 1. question with one item -->
     <table class="questionItem" v-if="items.length === 1">
-      <tr class="" v-for="option in items[0].options" v-bind:key="option">
+      <tr class="" v-for="option in getFirstItemOptions" v-bind:key="option">
         <th>{{ option }}</th>
         <!-- given options -->
         <td>
@@ -35,12 +35,12 @@
       <tr>
         <th></th>
         <!-- given options -->
-        <th v-for="option in items[0].options" v-bind:key="option">
+        <th v-for="option in getFirstItemOptions" v-bind:key="option">
           {{ option }}
         </th>
       </tr>
       <!-- each item and its radios input -->
-      <tr class="choice" v-for="item in items" v-bind:key="item">
+      <tr class="choice" v-for="item in getItems" v-bind:key="item">
         <!-- item name -->
         <th>{{ item.name }}</th>
         <!-- radio inputs -->
@@ -68,6 +68,14 @@ export default {
     items: Array,
     id: String,
     unfinished: Boolean
+  },
+  computed: {
+    getFirstItemOptions() {
+      return this.items[0].options;
+    },
+    getItems() {
+      return this.items;
+    }
   },
   methods: {
     // update answer
