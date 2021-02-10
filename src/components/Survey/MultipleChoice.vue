@@ -30,7 +30,7 @@
     </table>
 
     <!-- 2. question with multiple items -->
-    <table class="questionItems" v-if="items.length !== 1">
+    <table class="questionItems" v-else>
       <!-- row for the options -->
       <tr>
         <th></th>

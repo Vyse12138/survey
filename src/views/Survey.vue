@@ -31,7 +31,7 @@
       <OpenEnded body="Any feedback?" isCompulsory="0" :unfinished="false" />
 
       <!-- show submit button when not loading and no error -->
-      <button class="submit" v-on:click="submitSurvey">
+      <button class="submit" @click.prevent="submitSurvey">
         submit
       </button>
     </div>
@@ -104,8 +104,7 @@ export default {
         .items.find(e => e.name === itemID).answer = value;
     },
     // function to post data
-    submitSurvey(e) {
-      e.preventDefault();
+    submitSurvey() {
       // input validation to ensure every compulsory question is answered
       this.data.questions.forEach(question => {
         if (question.isCompulsory === 1) {
