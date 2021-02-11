@@ -14,22 +14,27 @@
         <h1>{{ data.title }}</h1>
         <h3>{{ data.description }}</h3>
       </div>
-
-      <!-- question section -->
-      <MultipleChoice
-        v-for="question in data.questions"
-        v-bind:key="question.id"
-        @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
-        @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
-        :body="question.body"
-        :isCompulsory="question.isCompulsory"
-        :items="question.items"
-        :id="question.id"
-        :unfinished="unfinished[question.id]"
-      />
-
-      <OpenEnded body="Any feedback?" isCompulsory="0" :unfinished="false" />
-
+      <div v-for="question in data.questions" v-bind:key="question.id">
+        <!-- question section -->
+        <MultipleChoice
+          v-if="question.items"
+          @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
+          @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
+          :body="question.body"
+          :isCompulsory="question.isCompulsory"
+          :items="question.items"
+          :id="question.id"
+          :unfinished="unfinished[question.id]"
+        />
+        <OpenEnded
+          v-if="!question.items"
+          @saveAnswer="saveAnswer"
+          :id="question.id"
+          :body="question.body"
+          :isCompulsory="question.isCompulsory"
+          :unfinished="unfinished[question.id]"
+        />
+      </div>
       <!-- show submit button when not loading and no error -->
       <button class="submit" @click.prevent="submitSurvey">
         submit
@@ -77,10 +82,10 @@ export default {
       unfinished: []
     };
   },
-  mounted() {
+  created() {
     // fetching data from api
     axios
-      .get("https://run.mocky.io/v3/02101cdd-2ce1-48ab-8fd3-dd83b097e20e")
+      .get("https://run.mocky.io/v3/6469b3d9-9fa7-4e90-938c-86b2f7a1c136")
       .then(response => {
         this.data = response.data;
       })
@@ -103,14 +108,31 @@ export default {
         .find(e => e.id === questionID)
         .items.find(e => e.name === itemID).answer = value;
     },
+    saveAnswer(questionID, value) {
+      this.data.questions.find(e => e.id === questionID).answer = value;
+    },
     // function to post data
     submitSurvey() {
       // input validation to ensure every compulsory question is answered
       this.data.questions.forEach(question => {
         if (question.isCompulsory === 1) {
-          question.items.forEach(item => {
+          if (question.items) {
+            question.items.forEach(item => {
+              this.unfinished[question.id] = false;
+              if (item.answer === null) {
+                this.unfinished[question.id] = true;
+                setTimeout(() => {
+                  document.getElementById(question.id).scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                  });
+                }, 0);
+                throw new Error("A compulsory question is not being answered.");
+              }
+            });
+          } else {
             this.unfinished[question.id] = false;
-            if (item.answer === null) {
+            if (question.answer === null) {
               this.unfinished[question.id] = true;
               setTimeout(() => {
                 document.getElementById(question.id).scrollIntoView({
@@ -120,7 +142,7 @@ export default {
               }, 0);
               throw new Error("A compulsory question is not being answered.");
             }
-          });
+          }
         }
       });
       // post answers to server

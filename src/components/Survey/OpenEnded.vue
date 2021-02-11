@@ -3,16 +3,16 @@
     <!-- question and * mark -->
     <h3 class="questionBody">
       {{ body }}
-      <span class="isCompulsory" v-if="isCompulsory === '1'">*</span>
+      <span class="isCompulsory" v-if="isCompulsory">*</span>
     </h3>
 
     <!-- warning section if required question is not being answered -->
-    <div class="required" v-if="unfinished">
+    <div :id="id" class="required" v-if="unfinished">
       <h3>Please finish this question!</h3>
     </div>
 
     <!-- input area -->
-    <textarea class="input" rows="10" />
+    <textarea class="input" rows="10" @keyup="saveAnswer" />
   </div>
 </template>
 
@@ -21,8 +21,16 @@ export default {
   name: "OpenEnded",
   props: {
     body: String,
-    isCompulsory: String,
+    isCompulsory: Number,
+    id: String,
     unfinished: Boolean
+  },
+  methods: {
+    // update answer
+    saveAnswer(e) {
+      this.$emit("saveAnswer", this.id, e.target.value);
+    },
+
   }
 };
 </script>
