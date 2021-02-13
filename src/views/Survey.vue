@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <!-- survey page -->
+  <div class="survey">
     <!-- front image -->
     <div class="frontImg" />
 
@@ -14,8 +15,10 @@
         <h1>{{ data.title }}</h1>
         <h3>{{ data.description }}</h3>
       </div>
+
+      <!-- question section -->
       <div v-for="question in data.questions" v-bind:key="question.id">
-        <!-- question section -->
+        <!-- multiple choice questions -->
         <MultipleChoice
           v-if="question.items"
           @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
@@ -26,6 +29,7 @@
           :id="question.id"
           :unfinished="unfinished[question.id]"
         />
+        <!-- open ended questions -->
         <OpenEnded
           v-if="!question.items"
           @saveAnswer="saveAnswer"
@@ -35,6 +39,7 @@
           :unfinished="unfinished[question.id]"
         />
       </div>
+
       <!-- show submit button when not loading and no error -->
       <button class="submit" @click.prevent="submitSurvey">
         submit
@@ -56,7 +61,7 @@ export default {
   },
   data() {
     return {
-      //response data
+      //response data with template data type
       data: {
         title: "",
         description: "",
@@ -87,12 +92,15 @@ export default {
     axios
       .get("https://run.mocky.io/v3/6469b3d9-9fa7-4e90-938c-86b2f7a1c136")
       .then(response => {
+        // assigning data
         this.data = response.data;
       })
       .catch(() => {
+        // show error message
         this.error = true;
       })
       .finally(() => {
+        // finish loading
         this.loading = false;
       });
   },
@@ -103,14 +111,19 @@ export default {
         e => e.id === questionID
       ).items[0].answer = value;
     },
+
+    // update answer at radio checked
     saveAnswerWithMultipleItems(questionID, itemID, value) {
       this.data.questions
         .find(e => e.id === questionID)
         .items.find(e => e.name === itemID).answer = value;
     },
+
+    // update answer when inputing to open ended question
     saveAnswer(questionID, value) {
       this.data.questions.find(e => e.id === questionID).answer = value;
     },
+
     // function to post data
     submitSurvey() {
       // input validation to ensure every compulsory question is answered
@@ -122,6 +135,7 @@ export default {
               if (item.answer === null) {
                 this.unfinished[question.id] = true;
                 setTimeout(() => {
+                  // scroll to warning section
                   document.getElementById(question.id).scrollIntoView({
                     behavior: "smooth",
                     block: "center"
@@ -135,6 +149,7 @@ export default {
             if (question.answer === null) {
               this.unfinished[question.id] = true;
               setTimeout(() => {
+                // scroll to warning section
                 document.getElementById(question.id).scrollIntoView({
                   behavior: "smooth",
                   block: "center"
@@ -145,17 +160,16 @@ export default {
           }
         }
       });
+
       // post answers to server
       axios
         .post("url goes here", this.data)
         .then(() => {
-          // testing
-          console.log(this.data);
-          alert("Submit successful");
+          // go to gratitude page
           this.$router.push("/gratitude");
         })
         .catch(() => {
-          // testing
+          // testing upload failed
           console.log(this.data);
           alert("submit failed");
           this.$router.push("/gratitude");
@@ -166,7 +180,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.home {
+// survey page
+.survey {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -210,6 +225,7 @@ export default {
     margin: 20px;
     padding: 15px 25px;
     border-radius: 10px;
+    // hover and active effect
     &:hover {
       background-color: #3e8e41;
     }
@@ -220,8 +236,9 @@ export default {
     }
   }
 }
+// responsive design
 @media (max-width: 1024px) {
-  .home {
+  .survey {
     width: 100%;
   }
 }

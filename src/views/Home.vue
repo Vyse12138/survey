@@ -1,4 +1,5 @@
 <template>
+  <!-- home page -->
   <div class="home">
     <router-link to="/survey" class="button">
       SURVEY
@@ -13,6 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// button styling
 .button {
   display: inline-block;
   background-color: #4caf50;
@@ -23,6 +25,7 @@ export default {
   position: relative;
   text-decoration: none;
   border-radius: 10px;
+  // button hover and active effect
   &:hover {
     background-color: #3e8e41;
   }

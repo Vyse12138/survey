@@ -29,8 +29,7 @@ export default {
     // update answer
     saveAnswer(e) {
       this.$emit("saveAnswer", this.id, e.target.value);
-    },
-
+    }
   }
 };
 </script>

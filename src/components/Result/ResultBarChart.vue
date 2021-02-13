@@ -1,6 +1,6 @@
 <template>
   <div class="resultBarChart">
-    <VueEcharts :option="option" style="height: 300px" ref="chart" />
+    <VueEcharts :option="option" style="height: 300px" />
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import { VueEcharts } from "vue3-echarts";
 export default {
   name: "ResultBarChart",
   components: {
-    VueEcharts,
+    VueEcharts
   },
   computed: {
     getResults() {
@@ -20,92 +20,52 @@ export default {
   props: {
     question: String,
     items: Array,
-    id: String,
+    id: String
   },
   data() {
     return {
-      resultsSum: 0,
-      votes: [],
-      labelOption: {
-        show: true,
-        position: "insideBottom",
-        distance: 15,
-        rotate: 90,
-        align: "left",
-        verticalAlign: "middle",
-        formatter: "{c}",
-        fontSize: 16,
-      },
-
+      // option for plotting chart
       option: {
         tooltip: {
           trigger: "axis",
           axisPointer: {
-            type: "shadow",
+            type: "shadow"
           },
         },
         legend: {
-          data: [],
+          data: []
         },
         xAxis: {
           type: "category",
           axisTick: { show: false },
-          data: [],
+          data: []
         },
         yAxis: {
-          type: "value",
+          type: "value"
         },
-
-        series: [
-          {
-            name: "Forest",
-            type: "bar",
-            barGap: 0,
-            label: this.labelOption,
-
-            data: [320, 332, 301, 334, 390],
-          },
-          {
-            name: "Steppe",
-            type: "bar",
-            label: this.labelOption,
-
-            data: [220, 182, 191, 234, 290],
-          },
-          {
-            name: "Desert",
-            type: "bar",
-            label: this.labelOption,
-
-            data: [150, 232, 201, 154, 190],
-          },
-          {
-            name: "Wetland",
-            type: "bar",
-            label: this.labelOption,
-
-            data: [98, 77, 101, 99, 40],
-          },
-        ],
-      },
+        series: []
+      }
     };
   },
 
   created() {
+    // update chart legends
     let legendData = [];
     for (const result in this.items[0].result) {
       legendData.push(result);
     }
     this.option.legend.data = legendData;
 
+    // update legends on x axis
     let xAxisData = [];
     for (const item of this.items) {
       xAxisData.push(item.name);
     }
     this.option.xAxis.data = xAxisData;
 
+    // update responses data
     let seriesData = [],
-      l = this.items.length;
+      l = legendData.length;
     while (l--) {
       let tempData = { type: "bar", name: legendData[l] };
       let tempResult = [];
@@ -116,12 +76,12 @@ export default {
       seriesData.unshift(tempData);
     }
     this.option.series = seriesData;
-  },
+  }
 };
 </script>
 
 <style scoped lang="scss">
-// question box
+// result section
 .resultBarChart {
   margin: 20px 0;
   padding: 20px;

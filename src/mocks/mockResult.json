@@ -1,5 +1,5 @@
 // mock api address:
-https://run.mocky.io/v3/b460d16c-562a-4057-9752-999ed54f7cc3
+https://run.mocky.io/v3/987b3361-54b0-496d-b0ae-2b4e5cd971c9
 
 // some mock data
 {
@@ -73,61 +73,49 @@ https://run.mocky.io/v3/b460d16c-562a-4057-9752-999ed54f7cc3
         {
           "name": "shad",
           "result": {
-            "very pool": 11,
-            "poor": 22,
+            "poor": 11,
             "average": 33,
-            "good": 44,
-            "very good": 55
+            "good": 55
           }
         },
         {
           "name": "bar",
           "result": {
-            "very pool": 11,
-            "poor": 22,
+            "poor": 33,
             "average": 33,
-            "good": 44,
-            "very good": 55
+            "good": 33
           }
         },
         {
           "name": "foo",
           "result": {
-            "very pool": 11,
             "poor": 22,
             "average": 33,
-            "good": 44,
-            "very good": 55
+            "good": 44
           }
         },
         {
           "name": "cat",
           "result": {
-            "very pool": 11,
-            "poor": 22,
-            "average": 33,
-            "good": 44,
-            "very good": 55
+            "poor": 15,
+            "average": 69,
+            "good": 15
           }
         },
         {
           "name": "dog",
           "result": {
-            "very pool": 11,
-            "poor": 22,
-            "average": 33,
-            "good": 44,
-            "very good": 55
+            "poor": 55,
+            "average": 4,
+            "good": 40
           }
         },
         {
           "name": "boy",
           "result": {
-            "very pool": 11,
             "poor": 22,
-            "average": 33,
-            "good": 44,
-            "very good": 55
+            "average": 25,
+            "good": 52
           }
         }
       ]

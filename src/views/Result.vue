@@ -1,5 +1,7 @@
 <template>
+  <!-- results page -->
   <div class="result">
+
     <!-- survey heading section -->
     <div class="heading">
       <h1>{{ title }}</h1>
@@ -50,16 +52,19 @@ export default {
   mounted() {
     // fetching data from api
     axios
-      .get("https://run.mocky.io/v3/b460d16c-562a-4057-9752-999ed54f7cc3")
+      .get("https://run.mocky.io/v3/987b3361-54b0-496d-b0ae-2b4e5cd971c9")
       .then(response => {
+        // assigning respnse to corresponding data
         this.title = response.data.title;
         this.description = response.data.description;
         this.results = response.data.results;
       })
       .catch(() => {
+        // when there is an error, show error message
         this.error = true;
       })
       .finally(() => {
+        // finish loading
         this.loading = false;
       });
   }
@@ -67,6 +72,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// result page styling
 .result {
   width: 60%;
   margin-left: auto;
@@ -111,6 +117,7 @@ export default {
     margin: 20px;
     padding: 15px 25px;
     border-radius: 10px;
+    // hover and active effect
     &:hover {
       background-color: #3e8e41;
     }
@@ -121,6 +128,7 @@ export default {
     }
   }
 }
+// responsive design
 @media (max-width: 1024px) {
   .result {
     width: 100%;
