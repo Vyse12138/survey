@@ -152,13 +152,13 @@ export default {
           // testing
           console.log(this.data);
           alert("Submit successful");
-          this.$router.push("/result");
+          this.$router.push("/gratitude");
         })
         .catch(() => {
           // testing
           console.log(this.data);
           alert("submit failed");
-          this.$router.push("/result");
+          this.$router.push("/gratitude");
         });
     }
   }

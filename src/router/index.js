@@ -15,6 +15,11 @@ const routes = [
     path: "/result",
     // route level code-splitting, lazy-loaded when visited.
     component: () => import("../views/Result.vue")
+  },
+  {
+    path: "/gratitude",
+    // route level code-splitting, lazy-loaded when visited.
+    component: () => import("../views/Gratitude.vue")
   }
 ];
 
