@@ -1,7 +1,6 @@
 <template>
   <!-- results page -->
   <div class="result">
-
     <!-- survey heading section -->
     <div class="heading">
       <h1>{{ title }}</h1>

@@ -15,7 +15,7 @@ export default {
   computed: {
     getResults() {
       return this.items[0].result;
-    },
+    }
   },
   props: {
     question: String,
@@ -30,7 +30,7 @@ export default {
           trigger: "axis",
           axisPointer: {
             type: "shadow"
-          },
+          }
         },
         legend: {
           data: []
