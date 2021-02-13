@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-
+import Result from "../views/Result.vue";
+import Survey from "../views/Survey.vue";
 const routes = [
   {
     path: "/",
@@ -8,13 +9,11 @@ const routes = [
   },
   {
     path: "/survey",
-    // route level code-splitting, lazy-loaded when visited.
-    component: () => import("../views/Survey.vue")
+    component: Survey
   },
   {
     path: "/result",
-    // route level code-splitting, lazy-loaded when visited.
-    component: () => import("../views/Result.vue")
+    component: Result
   },
   {
     path: "/gratitude",
