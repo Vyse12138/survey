@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Result from "../views/Result.vue";
 import Survey from "../views/Survey.vue";
@@ -9,6 +9,7 @@ const routes = [
   },
   {
     path: "/survey",
+
     component: Survey
   },
   {
@@ -23,7 +24,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 });
 

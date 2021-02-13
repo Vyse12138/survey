@@ -25,7 +25,6 @@ export default {
   data() {
     return {
       resultsSum: 0,
-      votes: [],
       option: {
         title: {
           textAlign: "left",
@@ -72,12 +71,12 @@ export default {
       this.resultsSum += this.getResults[result];
     }
     this.option.title.subtext = `${this.resultsSum} responses`;
-
+    let votes = [];
     for (const result in this.getResults) {
       let temp = { value: this.getResults[result], name: result };
-      this.votes.push(temp);
+      votes.push(temp);
     }
-    this.option.series[0].data = this.votes;
+    this.option.series[0].data = votes;
   },
 };
 </script>

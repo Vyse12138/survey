@@ -1,21 +1,122 @@
 <template>
   <div class="resultBarChart">
-    aasd
+    <VueEcharts :option="option" style="height: 300px" ref="chart" />
   </div>
 </template>
 
 <script>
+import { VueEcharts } from "vue3-echarts";
 
 export default {
   name: "ResultBarChart",
+  components: {
+    VueEcharts,
+  },
+  computed: {
+    getResults() {
+      return this.items[0].result;
+    },
+  },
   props: {
     question: String,
     items: Array,
-    id: String
+    id: String,
   },
-  mounted() {
+  data() {
+    return {
+      resultsSum: 0,
+      votes: [],
+      labelOption: {
+        show: true,
+        position: "insideBottom",
+        distance: 15,
+        rotate: 90,
+        align: "left",
+        verticalAlign: "middle",
+        formatter: "{c}",
+        fontSize: 16,
+      },
 
-  }
+      option: {
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            type: "shadow",
+          },
+        },
+        legend: {
+          data: [],
+        },
+        xAxis: {
+          type: "category",
+          axisTick: { show: false },
+          data: [],
+        },
+        yAxis: {
+          type: "value",
+        },
+
+        series: [
+          {
+            name: "Forest",
+            type: "bar",
+            barGap: 0,
+            label: this.labelOption,
+
+            data: [320, 332, 301, 334, 390],
+          },
+          {
+            name: "Steppe",
+            type: "bar",
+            label: this.labelOption,
+
+            data: [220, 182, 191, 234, 290],
+          },
+          {
+            name: "Desert",
+            type: "bar",
+            label: this.labelOption,
+
+            data: [150, 232, 201, 154, 190],
+          },
+          {
+            name: "Wetland",
+            type: "bar",
+            label: this.labelOption,
+
+            data: [98, 77, 101, 99, 40],
+          },
+        ],
+      },
+    };
+  },
+
+  created() {
+    let legendData = [];
+    for (const result in this.items[0].result) {
+      legendData.push(result);
+    }
+    this.option.legend.data = legendData;
+
+    let xAxisData = [];
+    for (const item of this.items) {
+      xAxisData.push(item.name);
+    }
+    this.option.xAxis.data = xAxisData;
+
+    let seriesData = [],
+      l = this.items.length;
+    while (l--) {
+      let tempData = { type: "bar", name: legendData[l] };
+      let tempResult = [];
+      for (const item of this.items) {
+        tempResult.unshift(item.result[legendData[l]]);
+      }
+      tempData.data = tempResult;
+      seriesData.unshift(tempData);
+    }
+    this.option.series = seriesData;
+  },
 };
 </script>
 
@@ -28,31 +129,5 @@ export default {
   box-shadow: 0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125);
   background-color: white;
   border-radius: 10px;
-  // question heading
-  .question {
-    text-align: left;
-    font-weight: bold;
-  }
-  .table {
-    .pie {
-      float: left;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: yellowgreen;
-      margin: 20px 50px;
-      background: conic-gradient(deeppink 20%, #fb3 0, #fb3 30%, yellowgreen 0);
-    }
-    .info {
-      width: 40%;
-      float: right;
-      text-align: left;
-      font-weight: bold;
-    }
-    .a {
-      height: 20px;
-      clear: both;
-    }
-  }
 }
 </style>
