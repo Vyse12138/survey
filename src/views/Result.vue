@@ -6,25 +6,35 @@
       <h3>{{ description }}</h3>
     </div>
 
-    <!-- pie charts -->
-    <PieChart
-      v-for="result in results"
-      v-bind:key="result.id"
-      :question="result.question"
-      :items="result.items"
-      :id="result.id"
-    />
+    <div v-for="result in results" v-bind:key="result.id">
+      <!-- pie charts -->
+      <ResultPieChart
+        v-if="result.items.length === 1"
+        :question="result.question"
+        :items="result.items"
+        :id="result.id"
+      />
+      <!-- bar charts -->
+      <ResultBarChart
+        v-if="result.items.length !== 1"
+        :question="result.question"
+        :items="result.items"
+        :id="result.id"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import PieChart from "@/components/Result/PieChart.vue";
+import ResultPieChart from "@/components/Result/ResultPieChart.vue";
+import ResultBarChart from "@/components/Result/ResultBarChart.vue";
 import axios from "axios";
 
 export default {
   name: "Result",
   components: {
-    PieChart
+    ResultPieChart,
+    ResultBarChart
   },
   data() {
     return {
