@@ -12,7 +12,7 @@
     <div v-if="!loading && !error">
       <!-- survey heading section -->
       <div class="heading" v-if="!loading && !error">
-        <h1>{{ data.title }}</h1>
+        <h1>{{ data.surveyName }}</h1>
         <h3>{{ data.description }}</h3>
       </div>
 
@@ -20,7 +20,7 @@
       <div v-for="question in data.questions" v-bind:key="question.id">
         <!-- multiple choice questions -->
         <MultipleChoice
-          v-if="question.items"
+          v-if="question.items.length > 0"
           @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
           @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
           :body="question.body"
@@ -31,7 +31,7 @@
         />
         <!-- open ended questions -->
         <OpenEnded
-          v-if="!question.items"
+          v-if="question.items.length === 0"
           @saveAnswer="saveAnswer"
           :id="question.id"
           :body="question.body"
@@ -63,8 +63,9 @@ export default {
     return {
       //response data with template data type
       data: {
-        title: "",
+        surveyName: "",
         description: "",
+        isCompleted: 0,
         questions: [
           {
             id: "",
@@ -90,7 +91,7 @@ export default {
   created() {
     // fetching data from api
     axios
-      .get("https://run.mocky.io/v3/6469b3d9-9fa7-4e90-938c-86b2f7a1c136")
+      .get("https://run.mocky.io/v3/13048afe-8cd5-4417-a6ae-c83f0a5fb00c")
       .then(response => {
         // assigning data
         this.data = response.data;
@@ -161,6 +162,8 @@ export default {
         }
       });
 
+      //set survey to completed
+      this.data.isCompleted = 1;
       // post answers to server
       axios
         .post("url goes here", this.data)
