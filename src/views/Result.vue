@@ -1,6 +1,6 @@
 <template>
   <!-- results page -->
-  <div class="result">
+  <div class="result" v-if="securityCheck()">
     <!-- survey heading section -->
     <div class="heading">
       <h1>{{ title }}</h1>
@@ -37,6 +37,10 @@ export default {
     ResultPieChart,
     ResultBarChart
   },
+  props: {
+    surveyID: String,
+    securityKey: String
+  },
   data() {
     return {
       //response data
@@ -48,9 +52,20 @@ export default {
       error: false
     };
   },
-  mounted() {
+  methods: {
+    //security check
+    securityCheck() {
+      if (this.securityKey.match(/kyle/)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  },
+  created() {
     // fetching data from api
     axios
+      // get result data (shuold be replace with a url with this.surveyID)
       .get("https://run.mocky.io/v3/987b3361-54b0-496d-b0ae-2b4e5cd971c9")
       .then(response => {
         // assigning respnse to corresponding data
