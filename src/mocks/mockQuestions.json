@@ -1,14 +1,59 @@
+// Get("/data", p =>
+// {
+//   TMASurvey survey = new TMASurvey
+//   {
+//     Title = "test title",
+//     Description = "test description",
+//     Questions = new List<Question>
+//     {
+//       new Question
+//       {
+//         Body="Q1.  We consider our current overall turnover to be:",
+//         IsCompulsory = 1,
+//         Items =new List<ItemOfQuestion>
+//         {
+//           new ItemOfQuestion
+//           {
+//             Options = new List<string>
+//             {"very pool","poor","average" } 
+//           }
+//         }
+//       },
+//       new Question
+//       {
+//         Body="Q2. Overall turnover:",
+//         IsCompulsory = 1,
+//         Items =new List<ItemOfQuestion>
+//         {
+//           new ItemOfQuestion{
+//             Options = new List<string>
+//             {
+//               "very pool","poor","average" 
+//             },
+//           }
+//           new ItemOfQuestion
+//           {
+//             Options = new List<string>
+//             {
+//               "very pool","poor","average" 
+//             } 
+//           }
+//         }
+//       }
+//     }
+//   };
+//   return Response.AsJson(survey);
+// }
+
 // mock api address:
-https: //run.mocky.io/v3/6469b3d9-9fa7-4e90-938c-86b2f7a1c136
+https://run.mocky.io/v3/6469b3d9-9fa7-4e90-938c-86b2f7a1c136
+
 // some mock data
-{
-  "uniqueID": "00000000-0000-0000-0000-000000000000",
-  "surveyID": 0,
-  "surveyName": "test title",
+{ 
+  "title": "test title",
   "description": "test description",
-  "email": null,
-  "isCompleted": 0,
-  "questions": [
+  "questions": 
+  [
     {
       "id": "1",
       "body": "Q1. Overall turnover:",
@@ -219,14 +264,12 @@ https: //run.mocky.io/v3/6469b3d9-9fa7-4e90-938c-86b2f7a1c136
       "id": "8",
       "body": "Q8. Overall turnover:",
       "isCompulsory": 1,
-      "items": [],
       "answer": null
     },
     {
       "id": "9",
       "body": "Q8. Overall turnover:",
       "isCompulsory": 0,
-      "items": [],
       "answer": null
     }
   ]
