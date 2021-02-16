@@ -13,8 +13,9 @@ const routes = [
     component: Survey
   },
   {
-    path: "/result",
-    component: Result
+    path: "/result/:surveyID/:securityKey",
+    component: Result,
+    props: true
   },
   {
     path: "/gratitude",
