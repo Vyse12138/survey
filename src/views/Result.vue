@@ -11,14 +11,14 @@
       <!-- pie charts -->
       <ResultPieChart
         v-if="result.items.length === 1"
-        :question="result.question"
+        :question="result.body"
         :items="result.items"
         :id="result.id"
       />
       <!-- bar charts -->
       <ResultBarChart
         v-if="result.items.length !== 1"
-        :question="result.question"
+        :question="result.body"
         :items="result.items"
         :id="result.id"
       />
@@ -35,21 +35,22 @@ export default {
   name: "Result",
   components: {
     ResultPieChart,
-    ResultBarChart
+    ResultBarChart,
   },
   props: {
     surveyID: String,
-    securityKey: String
+    securityKey: String,
   },
   data() {
     return {
       //response data
+      resultSet: [],
       title: "",
       description: "",
       results: [],
       //indicator for loading and fetching error
       loading: true,
-      error: false
+      error: false,
     };
   },
   methods: {
@@ -60,18 +61,50 @@ export default {
       } else {
         return false;
       }
-    }
+    },
   },
   created() {
     // fetching data from api
     axios
       // get result data (shuold be replace with a url with this.surveyID)
-      .get("https://run.mocky.io/v3/987b3361-54b0-496d-b0ae-2b4e5cd971c9")
-      .then(response => {
+      .get("https://run.mocky.io/v3/6918a5dc-d23b-4913-b560-57e1bc0e7336")
+      .then((response) => {
         // assigning respnse to corresponding data
-        this.title = response.data.title;
-        this.description = response.data.description;
-        this.results = response.data.results;
+
+        this.resultSet = response.data;
+        this.title = this.resultSet[0].surveyName;
+        this.description = this.resultSet[0].description;
+        this.results = [];
+        for (const question of this.resultSet[0].questions) {
+          question.isCompulsory === 1 &&
+            question.items.length !== 0 &&
+            this.results.push(question);
+        }
+        let votes = [];
+        for (const res of this.results) {
+          let vote = {};
+          for (const opt of res.items[0].options) {
+            vote[opt] = 0;
+          }
+          votes.push(vote);
+        }
+        console.log(votes)
+        for (const result of this.results) {
+          let resultItems = [];
+          for (const item of result.items) {
+            resultItems.push({
+              name: item.name,
+              result: {
+                "very pool": 11,
+                poor: 22,
+                average: 33,
+              },
+            });
+          }
+
+          result.items = resultItems;
+        }
+        console.log(this.results);
       })
       .catch(() => {
         // when there is an error, show error message
@@ -81,7 +114,7 @@ export default {
         // finish loading
         this.loading = false;
       });
-  }
+  },
 };
 </script>
 
