@@ -95,40 +95,31 @@ export default {
               tempItem.name = item.name;
               tempItem.result = {};
               // iterate the options
-              for (let option in item.options) {
+              for (let option of item.options) {
                 tempItem.result[option] = 0;
               }
-              temp.items.push(tempItem)
+              temp.items.push(tempItem);
             }
             this.results.push(temp);
-            console.log(this.results)
           }
         }
-        // let votes = [];
-        // for (const res of this.results) {
-        //   let vote = {};
-        //   for (const opt of res.items[0].options) {
-        //     vote[opt] = 0;
-        //   }
-        //   votes.push(vote);
-        // }
-        // console.log(votes);
-        // for (const result of this.results) {
-        //   let resultItems = [];
-        //   for (const item of result.items) {
-        //     resultItems.push({
-        //       name: item.name,
-        //       result: {
-        //         "very pool": 11,
-        //         poor: 22,
-        //         average: 33,
-        //       },
-        //     });
-        //   }
-
-        //   result.items = resultItems;
-        // }
-        // console.log(this.results);
+        for (const indivdual of this.resultSet) {
+          if (indivdual.isCompleted) {
+            console.log(indivdual);
+            for (const question of indivdual.questions) {
+              if (question.isCompulsory && question.items.length !== 0) {
+                console.log(question);
+                for (const item of question.items) {
+                  console.log(item);
+                  let i = 0;
+                  let j = 0;
+                  let k = "poor";
+                  this.results[i].items[j].result[k] += 1;
+                }
+              }
+            }
+          }
+        }
       })
       .catch(() => {
         // when there is an error, show error message
