@@ -5,7 +5,7 @@
     "surveyName": "test title",
     "description": "test description",
     "email": null,
-    "isCompleted": 0,
+    "isCompleted": 1,
     "questions": [
       {
         "id": "1",
@@ -18,7 +18,7 @@
               "poor",
               "average"
             ],
-            "answer": null
+            "answer": "very pool"
           }
         ]
       },
@@ -35,7 +35,7 @@
               "good",
               "very good"
             ],
-            "answer": null
+            "answer": "very pool"
           }
         ]
       },
@@ -50,7 +50,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -59,7 +59,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "bar"
           },
           {
@@ -68,7 +68,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -84,7 +84,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -93,7 +93,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "bar"
           },
           {
@@ -102,7 +102,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "foo"
           },
           {
@@ -111,7 +111,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "cat"
           },
           {
@@ -120,7 +120,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "dog"
           },
           {
@@ -129,7 +129,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "boy"
           }
         ]
@@ -145,7 +145,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -154,7 +154,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "bar"
           },
           {
@@ -163,7 +163,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -178,7 +178,7 @@
               "very pool",
               "poor"
             ],
-            "answer": null
+            "answer": "very pool"
           }
         ]
       },
@@ -192,7 +192,7 @@
               "very pool",
               "poor"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -200,7 +200,7 @@
               "very pool",
               "poor"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "bar"
           },
           {
@@ -208,7 +208,7 @@
               "very pool",
               "poor"
             ],
-            "answer": null,
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -218,14 +218,14 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": null
+        "answer": "very pool"
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": null
+        "answer": "very pool"
       }
     ]
   },
@@ -235,7 +235,7 @@
     "surveyName": "test title",
     "description": "test description",
     "email": null,
-    "isCompleted": 0,
+    "isCompleted": 1,
     "questions": [
       {
         "id": "1",
@@ -248,7 +248,7 @@
               "poor",
               "average"
             ],
-            "answer": null
+            "answer": "poor"
           }
         ]
       },
@@ -265,7 +265,7 @@
               "good",
               "very good"
             ],
-            "answer": null
+            "answer": "poor"
           }
         ]
       },
@@ -280,7 +280,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "shad"
           },
           {
@@ -289,7 +289,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "bar"
           },
           {
@@ -298,7 +298,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "trap"
           }
         ]
@@ -314,7 +314,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "shad"
           },
           {
@@ -323,7 +323,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "bar"
           },
           {
@@ -332,7 +332,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "foo"
           },
           {
@@ -341,7 +341,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "cat"
           },
           {
@@ -350,7 +350,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "dog"
           },
           {
@@ -359,7 +359,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "boy"
           }
         ]
@@ -375,7 +375,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "shad"
           },
           {
@@ -384,7 +384,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "bar"
           },
           {
@@ -393,7 +393,7 @@
               "poor",
               "average"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "trap"
           }
         ]
@@ -408,7 +408,7 @@
               "very pool",
               "poor"
             ],
-            "answer": null
+            "answer": "poor"
           }
         ]
       },
@@ -422,7 +422,7 @@
               "very pool",
               "poor"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "shad"
           },
           {
@@ -430,7 +430,7 @@
               "very pool",
               "poor"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "bar"
           },
           {
@@ -438,7 +438,7 @@
               "very pool",
               "poor"
             ],
-            "answer": null,
+            "answer": "poor",
             "name": "trap"
           }
         ]
@@ -448,14 +448,14 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": null
+        "answer": "poor"
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": null
+        "answer": "poor"
       }
     ]
   }
