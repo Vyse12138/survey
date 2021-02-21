@@ -103,6 +103,7 @@ export default {
             this.results.push(temp);
           }
         }
+        // retrive indivual user vote date
         for (const indivdual of this.resultSet) {
           if (indivdual.isCompleted) {
             for (const question of indivdual.questions) {
