@@ -11,14 +11,14 @@
       <!-- pie charts -->
       <ResultPieChart
         v-if="result.items.length === 1"
-        :question="result.body"
+        :question="result.question"
         :items="result.items"
         :id="result.id"
       />
       <!-- bar charts -->
       <ResultBarChart
         v-if="result.items.length !== 1"
-        :question="result.body"
+        :question="result.question"
         :items="result.items"
         :id="result.id"
       />
@@ -67,7 +67,7 @@ export default {
     // fetching data from api
     axios
       // get result data (shuold be replace with a url with this.surveyID)
-      .get("https://run.mocky.io/v3/1443b031-b427-49c3-8442-32ab520d9f2e")
+      .get("https://run.mocky.io/v3/3bd1adff-b50d-4ef8-8682-4a8fa4d46b86")
       .then((response) => {
         // assigning respnse to corresponding data
 
@@ -105,21 +105,22 @@ export default {
         }
         for (const indivdual of this.resultSet) {
           if (indivdual.isCompleted) {
-            console.log(indivdual);
             for (const question of indivdual.questions) {
               if (question.isCompulsory && question.items.length !== 0) {
-                console.log(question);
                 for (const item of question.items) {
-                  console.log(item);
-                  let i = 0;
-                  let j = 0;
-                  let k = "poor";
+                  let i = this.results.findIndex(e => e.id === question.id);
+                  let j =
+                    this.results[i].items.findIndex(
+                      e => e.name === item.name
+                    ) || 0;
+                  let k = item.answer;
                   this.results[i].items[j].result[k] += 1;
                 }
               }
             }
           }
         }
+        console.log(this.results)
       })
       .catch(() => {
         // when there is an error, show error message
