@@ -1,3 +1,9 @@
+// mock api address:
+https://run.mocky.io/v3/49320099-816e-4350-81d9-685364f576f8
+
+
+
+// some mock data
 [
   {
     "uniqueID": "00000000-0000-0000-0000-000000000000",
@@ -18,697 +24,7 @@
               "poor",
               "average"
             ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
             "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
           }
         ]
       },
@@ -740,7 +56,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -758,7 +74,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -774,7 +90,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -783,7 +99,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "average",
             "name": "bar"
           },
           {
@@ -801,7 +117,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "cat"
           },
           {
@@ -868,7 +184,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor"
+            "answer": "very pool",
           }
         ]
       },
@@ -882,7 +198,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "shad"
           },
           {
@@ -890,7 +206,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "bar"
           },
           {
@@ -898,7 +214,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "very pool",
+            "answer": null,
             "name": "trap"
           }
         ]
@@ -908,244 +224,14 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": "poor"
+        "answer": null
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "good"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
+        "answer": null
       }
     ]
   },
@@ -1169,466 +255,6 @@
               "average"
             ],
             "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "average"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
           }
         ]
       },
@@ -1660,7 +286,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -1678,7 +304,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -1694,7 +320,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -1712,7 +338,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "poor",
             "name": "foo"
           },
           {
@@ -1721,7 +347,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "cat"
           },
           {
@@ -1788,7 +414,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor"
+            "answer": "very pool",
           }
         ]
       },
@@ -1802,7 +428,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "shad"
           },
           {
@@ -1810,7 +436,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "bar"
           },
           {
@@ -1818,7 +444,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "trap"
           }
         ]
@@ -1828,248 +454,17 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": "poor"
+        "answer": null
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": "poor"
+        "answer": null
       }
     ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
+  },  {
     "uniqueID": "00000000-0000-0000-0000-000000000000",
     "surveyID": 0,
     "surveyName": "test title",
@@ -2089,466 +484,6 @@
               "average"
             ],
             "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
           }
         ]
       },
@@ -2580,7 +515,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -2598,7 +533,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -2614,7 +549,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -2623,7 +558,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "average",
             "name": "bar"
           },
           {
@@ -2641,7 +576,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "cat"
           },
           {
@@ -2708,7 +643,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor"
+            "answer": "very pool",
           }
         ]
       },
@@ -2722,7 +657,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "shad"
           },
           {
@@ -2730,7 +665,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "bar"
           },
           {
@@ -2738,7 +673,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "very pool",
+            "answer": null,
             "name": "trap"
           }
         ]
@@ -2748,248 +683,17 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": "poor"
+        "answer": null
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": "poor"
+        "answer": null
       }
     ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "good"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
+  },  {
     "uniqueID": "00000000-0000-0000-0000-000000000000",
     "surveyID": 0,
     "surveyName": "test title",
@@ -3009,466 +713,6 @@
               "average"
             ],
             "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "average"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
           }
         ]
       },
@@ -3500,101 +744,6 @@
               "poor",
               "average"
             ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
             "answer": "very pool",
             "name": "shad"
           },
@@ -3605,601 +754,6 @@
               "average"
             ],
             "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
             "name": "bar"
           },
           {
@@ -4233,7 +787,7 @@
               "poor",
               "average"
             ],
-            "answer": "very pool",
+            "answer": "average",
             "name": "bar"
           },
           {
@@ -4242,7 +796,7 @@
               "poor",
               "average"
             ],
-            "answer": "very pool",
+            "answer": "poor",
             "name": "foo"
           },
           {
@@ -4260,7 +814,7 @@
               "poor",
               "average"
             ],
-            "answer": "very pool",
+            "answer": "average",
             "name": "dog"
           },
           {
@@ -4269,7 +823,7 @@
               "poor",
               "average"
             ],
-            "answer": "very pool",
+            "answer": "average",
             "name": "boy"
           }
         ]
@@ -4294,7 +848,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "average",
             "name": "bar"
           },
           {
@@ -4318,7 +872,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "very pool"
+            "answer": "very pool",
           }
         ]
       },
@@ -4332,7 +886,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "very pool",
+            "answer": null,
             "name": "shad"
           },
           {
@@ -4340,7 +894,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "very pool",
+            "answer": null,
             "name": "bar"
           },
           {
@@ -4348,7 +902,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "very pool",
+            "answer": null,
             "name": "trap"
           }
         ]
@@ -4358,18 +912,17 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": "very pool"
+        "answer": null
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": "very pool"
+        "answer": null
       }
     ]
-  },
-  {
+  },  {
     "uniqueID": "00000000-0000-0000-0000-000000000000",
     "surveyID": 0,
     "surveyName": "test title",
@@ -4388,7 +941,7 @@
               "poor",
               "average"
             ],
-            "answer": "average"
+            "answer": "poor"
           }
         ]
       },
@@ -4420,7 +973,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -4438,7 +991,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -4454,7 +1007,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -4463,7 +1016,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "average",
             "name": "bar"
           },
           {
@@ -4481,7 +1034,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "cat"
           },
           {
@@ -4548,7 +1101,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor"
+            "answer": "very pool",
           }
         ]
       },
@@ -4562,7 +1115,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "shad"
           },
           {
@@ -4570,7 +1123,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "bar"
           },
           {
@@ -4578,7 +1131,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "very pool",
+            "answer": null,
             "name": "trap"
           }
         ]
@@ -4588,248 +1141,17 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": "poor"
+        "answer": null
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": "poor"
+        "answer": null
       }
     ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "good"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
+  },  {
     "uniqueID": "00000000-0000-0000-0000-000000000000",
     "surveyID": 0,
     "surveyName": "test title",
@@ -4849,466 +1171,6 @@
               "average"
             ],
             "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "average"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
           }
         ]
       },
@@ -5340,7 +1202,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -5358,7 +1220,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -5374,7 +1236,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -5392,7 +1254,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "poor",
             "name": "foo"
           },
           {
@@ -5401,7 +1263,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "cat"
           },
           {
@@ -5468,7 +1330,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor"
+            "answer": "very pool",
           }
         ]
       },
@@ -5482,7 +1344,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "shad"
           },
           {
@@ -5490,7 +1352,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "bar"
           },
           {
@@ -5498,7 +1360,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "trap"
           }
         ]
@@ -5508,248 +1370,17 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": "poor"
+        "answer": null
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": "poor"
+        "answer": null
       }
     ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
+  },  {
     "uniqueID": "00000000-0000-0000-0000-000000000000",
     "surveyID": 0,
     "surveyName": "test title",
@@ -5769,466 +1400,6 @@
               "average"
             ],
             "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
           }
         ]
       },
@@ -6260,7 +1431,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -6278,7 +1449,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -6294,7 +1465,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -6303,7 +1474,7 @@
               "poor",
               "average"
             ],
-            "answer": "poor",
+            "answer": "average",
             "name": "bar"
           },
           {
@@ -6321,7 +1492,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "cat"
           },
           {
@@ -6388,7 +1559,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor"
+            "answer": "very pool",
           }
         ]
       },
@@ -6402,7 +1573,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "shad"
           },
           {
@@ -6410,7 +1581,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "bar"
           },
           {
@@ -6418,7 +1589,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "very pool",
+            "answer": null,
             "name": "trap"
           }
         ]
@@ -6428,248 +1599,17 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": "poor"
+        "answer": null
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": "poor"
+        "answer": null
       }
     ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "good"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
+  },  {
     "uniqueID": "00000000-0000-0000-0000-000000000000",
     "surveyID": 0,
     "surveyName": "test title",
@@ -6689,466 +1629,6 @@
               "average"
             ],
             "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "average"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "poor",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "poor"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "poor"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "2",
-        "body": "Q2. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average",
-              "good",
-              "very good"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "body": "Q3. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "body": "Q4. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "foo"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "cat"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "dog"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "boy"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "body": "Q5. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "body": "Q6. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool"
-          }
-        ]
-      },
-      {
-        "id": "7",
-        "body": "Q7. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "shad"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "bar"
-          },
-          {
-            "options": [
-              "very pool",
-              "poor"
-            ],
-            "answer": "very pool",
-            "name": "trap"
-          }
-        ]
-      },
-      {
-        "id": "8",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [],
-        "answer": "very pool"
-      },
-      {
-        "id": "9",
-        "body": "Q8. Overall turnover:",
-        "isCompulsory": 0,
-        "items": [],
-        "answer": "very pool"
-      }
-    ]
-  },
-  {
-    "uniqueID": "00000000-0000-0000-0000-000000000000",
-    "surveyID": 0,
-    "surveyName": "test title",
-    "description": "test description",
-    "email": null,
-    "isCompleted": 1,
-    "questions": [
-      {
-        "id": "1",
-        "body": "Q1. Overall turnover:",
-        "isCompulsory": 1,
-        "items": [
-          {
-            "options": [
-              "very pool",
-              "poor",
-              "average"
-            ],
-            "answer": "average"
           }
         ]
       },
@@ -7180,7 +1660,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -7198,7 +1678,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -7214,7 +1694,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "shad"
           },
           {
@@ -7232,7 +1712,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "poor",
             "name": "foo"
           },
           {
@@ -7241,7 +1721,7 @@
               "poor",
               "average"
             ],
-            "answer": "average",
+            "answer": "very pool",
             "name": "cat"
           },
           {
@@ -7275,6 +1755,140 @@
               "poor",
               "average"
             ],
+            "answer": "average",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "body": "Q6. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": "very pool",
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "body": "Q7. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "body": "Q8. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [],
+        "answer": null
+      },
+      {
+        "id": "9",
+        "body": "Q8. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [],
+        "answer": null
+      }
+    ]
+  },  {
+    "uniqueID": "00000000-0000-0000-0000-000000000000",
+    "surveyID": 0,
+    "surveyName": "test title",
+    "description": "test description",
+    "email": null,
+    "isCompleted": 1,
+    "questions": [
+      {
+        "id": "1",
+        "body": "Q1. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "poor"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "body": "Q2. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average",
+              "good",
+              "very good"
+            ],
+            "answer": "very good"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "body": "Q3. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
             "answer": "very pool",
             "name": "shad"
           },
@@ -7293,7 +1907,102 @@
               "poor",
               "average"
             ],
+            "answer": "very pool",
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "body": "Q4. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
             "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "poor",
+            "name": "foo"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "cat"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "dog"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "boy"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "body": "Q5. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
             "name": "trap"
           }
         ]
@@ -7308,7 +2017,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor"
+            "answer": "very pool",
           }
         ]
       },
@@ -7322,7 +2031,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "shad"
           },
           {
@@ -7330,7 +2039,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "bar"
           },
           {
@@ -7338,7 +2047,7 @@
               "very pool",
               "poor"
             ],
-            "answer": "poor",
+            "answer": null,
             "name": "trap"
           }
         ]
@@ -7348,14 +2057,472 @@
         "body": "Q8. Overall turnover:",
         "isCompulsory": 1,
         "items": [],
-        "answer": "poor"
+        "answer": null
       },
       {
         "id": "9",
         "body": "Q8. Overall turnover:",
         "isCompulsory": 0,
         "items": [],
-        "answer": "poor"
+        "answer": null
+      }
+    ]
+  },  {
+    "uniqueID": "00000000-0000-0000-0000-000000000000",
+    "surveyID": 0,
+    "surveyName": "test title",
+    "description": "test description",
+    "email": null,
+    "isCompleted": 1,
+    "questions": [
+      {
+        "id": "1",
+        "body": "Q1. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "poor"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "body": "Q2. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average",
+              "good",
+              "very good"
+            ],
+            "answer": "very good"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "body": "Q3. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "body": "Q4. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "poor",
+            "name": "foo"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "cat"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "dog"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "boy"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "body": "Q5. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "body": "Q6. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": "very pool",
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "body": "Q7. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "body": "Q8. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [],
+        "answer": null
+      },
+      {
+        "id": "9",
+        "body": "Q8. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [],
+        "answer": null
+      }
+    ]
+  },  {
+    "uniqueID": "00000000-0000-0000-0000-000000000000",
+    "surveyID": 0,
+    "surveyName": "test title",
+    "description": "test description",
+    "email": null,
+    "isCompleted": 1,
+    "questions": [
+      {
+        "id": "1",
+        "body": "Q1. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "poor"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "body": "Q2. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average",
+              "good",
+              "very good"
+            ],
+            "answer": "very good"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "body": "Q3. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "body": "Q4. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "poor",
+            "name": "foo"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "cat"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "dog"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "boy"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "body": "Q5. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "average",
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor",
+              "average"
+            ],
+            "answer": "very pool",
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "body": "Q6. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": "very pool",
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "body": "Q7. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "shad"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "bar"
+          },
+          {
+            "options": [
+              "very pool",
+              "poor"
+            ],
+            "answer": null,
+            "name": "trap"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "body": "Q8. Overall turnover:",
+        "isCompulsory": 1,
+        "items": [],
+        "answer": null
+      },
+      {
+        "id": "9",
+        "body": "Q8. Overall turnover:",
+        "isCompulsory": 0,
+        "items": [],
+        "answer": null
       }
     ]
   }

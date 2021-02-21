@@ -26,12 +26,6 @@ export default {
     return {
       // option for plotting chart
       option: {
-        title: {
-          textAlign: "left",
-          text: `${this.question}`,
-          subtext: "",
-          left: "left"
-        },
         tooltip: {
           trigger: "axis",
           axisPointer: {
@@ -55,14 +49,6 @@ export default {
   },
 
   created() {
-    // update responses sum
-    let resultsSum = 0;
-    for (const result in this.getResults) {
-      resultsSum += this.getResults[result];
-    }
-    // display it on subtitle
-    this.option.title.subtext = `${resultsSum} responses`;
-
     // update chart legends
     let legendData = [];
     for (const result in this.items[0].result) {
@@ -84,7 +70,7 @@ export default {
       let tempData = { type: "bar", name: legendData[l] };
       let tempResult = [];
       for (const item of this.items) {
-        tempResult.push(item.result[legendData[l]]);
+        tempResult.unshift(item.result[legendData[l]]);
       }
       tempData.data = tempResult;
       seriesData.unshift(tempData);
