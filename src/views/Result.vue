@@ -35,11 +35,11 @@ export default {
   name: "Result",
   components: {
     ResultPieChart,
-    ResultBarChart,
+    ResultBarChart
   },
   props: {
     surveyID: String,
-    securityKey: String,
+    securityKey: String
   },
   data() {
     return {
@@ -50,7 +50,7 @@ export default {
       results: [],
       //indicator for loading and fetching error
       loading: true,
-      error: false,
+      error: false
     };
   },
   methods: {
@@ -61,14 +61,14 @@ export default {
       } else {
         return false;
       }
-    },
+    }
   },
   created() {
     // fetching data from api
     axios
       // get result data (shuold be replace with a url with this.surveyID)
       .get("https://run.mocky.io/v3/3bd1adff-b50d-4ef8-8682-4a8fa4d46b86")
-      .then((response) => {
+      .then(response => {
         // assigning respnse to corresponding data
 
         // all the results set
@@ -120,7 +120,6 @@ export default {
             }
           }
         }
-        console.log(this.results)
       })
       .catch(() => {
         // when there is an error, show error message
@@ -130,7 +129,7 @@ export default {
         // finish loading
         this.loading = false;
       });
-  },
+  }
 };
 </script>
 
