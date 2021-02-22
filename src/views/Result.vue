@@ -64,6 +64,10 @@ export default {
     }
   },
   created() {
+    // get current url
+    let currentURL = window.location.href;
+    console.log(currentURL);
+
     // fetching data from api
     axios
       // get result data (shuold be replace with a url with this.surveyID)
