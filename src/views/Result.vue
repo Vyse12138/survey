@@ -65,12 +65,14 @@ export default {
   },
   created() {
     // get current url
-    let currentURL = window.location.href;
-    console.log(currentURL);
+    let currentURL = new URL(window.location.href);
+    let guid = currentURL.pathname;
+    console.log(guid);
 
     // fetching data from api
     axios
       // get result data (shuold be replace with a url with this.surveyID)
+      // .get(`https://www.a.com/api/${guid}`)
       .get("https://run.mocky.io/v3/3bd1adff-b50d-4ef8-8682-4a8fa4d46b86")
       .then(response => {
         // assigning respnse to corresponding data
