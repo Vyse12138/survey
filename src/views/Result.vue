@@ -83,7 +83,7 @@ export default {
     axios
       // get result data (shuold be replace with a url with this.surveyID)
       // .get(`https://www.a.com/api/${guid}`)
-      .get("https://run.mocky.io/v3/3bd1adff-b50d-4ef8-8682-4a8fa4d46b86")
+      .get("https://run.mocky.io/v3/9265c4ec-ebda-4d73-ba61-13fb45b6fc6d")
       .then(response => {
         // set to loading
         this.loading = true;
@@ -98,7 +98,7 @@ export default {
         // assign template for each question
         // iteratate each question
         for (const question of this.resultSet[0].questions) {
-          if (question.isCompulsory === 1 && question.items.length !== 0) {
+          if (question.items.length !== 0) {
             // temp to represent each question
             let temp = {};
             // set id and body for each question
@@ -123,22 +123,34 @@ export default {
         // retrive indivual user vote date
         for (const indivdual of this.resultSet) {
           if (indivdual.isCompleted) {
+            // count completedd vote
             this.validCount++;
             for (const question of indivdual.questions) {
-              if (question.isCompulsory && question.items.length !== 0) {
-                for (const item of question.items) {
-                  let i = this.results.findIndex(e => e.id === question.id);
-                  let j =
-                    this.results[i].items.findIndex(
-                      e => e.name === item.name
-                    ) || 0;
-                  let k = item.answer;
-                  this.results[i].items[j].result[k] += 1;
+              // iterate through each question,
+              if (question.items.length !== 0) {
+                let allItemChecked = 1;
+                // for non-compulsory question,check if all item is being answered
+                if (!question.isCompulsory) {
+                  for (const item of question.items) {
+                    if (!item.answer) allItemChecked = 0;
+                  }
                 }
+                if (allItemChecked)
+                  for (const item of question.items) {
+                    let i = this.results.findIndex(e => e.id === question.id);
+                    let j =
+                      this.results[i].items.findIndex(
+                        e => e.name === item.name
+                      ) || 0;
+                    if (item.answer) {
+                      let k = item.answer;
+                      this.results[i].items[j].result[k] += 1;
+                    }
+                  }
               }
             }
-          }
-          else {
+          } else {
+            // count non-completedd vote
             this.invalidCount++;
           }
         }
