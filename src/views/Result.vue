@@ -1,8 +1,16 @@
 <template>
   <!-- results page -->
   <div class="result" v-if="securityCheck()">
+    <div class="loading" v-if="loading">
+      <h1>Loading...</h1>
+    </div>
     <!-- survey heading section -->
-    <div class="heading">
+    <div class="heading" v-if="!loading">
+      <div class="voteCount">
+        <p>Total Response:</p>
+        <p>Invalid Response:</p>
+        <p>Actual Response:</p>
+      </div>
       <h1>{{ title }}</h1>
       <h3>{{ description }}</h3>
     </div>
@@ -75,8 +83,9 @@ export default {
       // .get(`https://www.a.com/api/${guid}`)
       .get("https://run.mocky.io/v3/3bd1adff-b50d-4ef8-8682-4a8fa4d46b86")
       .then(response => {
+        // set to loading
+        this.loading = true;
         // assigning respnse to corresponding data
-
         // all the results set
         this.resultSet = response.data;
         // result title and description
@@ -147,13 +156,8 @@ export default {
   margin-left: auto;
   margin-right: auto;
   // image section
-  .frontImg {
-    margin: 20px 0;
-    box-shadow: 0 0.125em 0.275em 0 rgba(0, 0, 0, 0.125);
-    border-radius: 15px;
-    height: 240px;
-    background-image: url(../assets/front.png);
-    background-size: 100% 100%;
+  .loading {
+    margin-top: 100px;
   }
   // heading section
   .heading {
@@ -165,11 +169,17 @@ export default {
     background-color: white;
     border-top: 15px solid #6c7c1c;
     border-radius: 15px;
+
     h1 {
       font-size: 2.4em;
     }
     h3 {
       color: gray;
+    }
+    .voteCount {
+      float: right;
+      margin-top: 2%;
+      margin-right: 20%;
     }
   }
   // submit button
