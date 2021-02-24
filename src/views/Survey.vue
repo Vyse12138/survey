@@ -89,8 +89,14 @@ export default {
     };
   },
   created() {
+    // get current url
+    // let currentURL = new URL(window.location.href);
+    // let guid = currentURL.pathname;
+    // console.log(guid);
+    // -----------------------
     // fetching data from api
     axios
+      // .get(`https://www.a.com/api/${guid}`)
       .get("https://run.mocky.io/v3/13048afe-8cd5-4417-a6ae-c83f0a5fb00c")
       .then(response => {
         // assigning data

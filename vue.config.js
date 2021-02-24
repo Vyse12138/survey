@@ -1,5 +1,5 @@
 module.exports = {
   publicPath: "./",
-  // outputDir: "../wwwroot",
-  // filenameHashing: true
+  outputDir: "../wwwroot",
+  filenameHashing: true
 };
