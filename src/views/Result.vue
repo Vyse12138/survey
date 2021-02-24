@@ -7,9 +7,9 @@
     <!-- survey heading section -->
     <div class="heading" v-if="!loading">
       <div class="voteCount">
-        <p>Total Response:</p>
-        <p>Invalid Response:</p>
-        <p>Actual Response:</p>
+        <p>Total Response: {{ invalidCount + validCount }}</p>
+        <p>Invalid Response: {{ invalidCount }}</p>
+        <p>Actual Response: {{ validCount }}</p>
       </div>
       <h1>{{ title }}</h1>
       <h3>{{ description }}</h3>
@@ -58,7 +58,9 @@ export default {
       results: [],
       //indicator for loading and fetching error
       loading: true,
-      error: false
+      error: false,
+      validCount: 0,
+      invalidCount: 0
     };
   },
   methods: {
@@ -121,6 +123,7 @@ export default {
         // retrive indivual user vote date
         for (const indivdual of this.resultSet) {
           if (indivdual.isCompleted) {
+            this.validCount++;
             for (const question of indivdual.questions) {
               if (question.isCompulsory && question.items.length !== 0) {
                 for (const item of question.items) {
@@ -134,6 +137,9 @@ export default {
                 }
               }
             }
+          }
+          else {
+            this.invalidCount++;
           }
         }
       })
