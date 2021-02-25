@@ -97,7 +97,7 @@ export default {
     // fetching data from api
     axios
       // .get(`https://www.a.com/api/${guid}`)
-      .get("https://run.mocky.io/v3/13048afe-8cd5-4417-a6ae-c83f0a5fb00c")
+      .get("https://run.mocky.io/v3/d61f43dc-4082-4b03-b05e-efdfeb0a2ded")
       .then(response => {
         // assigning data
         this.data = response.data;

@@ -77,7 +77,7 @@ export default {
     // fetching data from api
     axios
       // get result data (shuold be replace with a url with this.surveyID)
-      .get("https://run.mocky.io/v3/9265c4ec-ebda-4d73-ba61-13fb45b6fc6d")
+      .get("https://run.mocky.io/v3/4447104c-a9ec-4274-9d04-c09629c1c7b9")
       .then(response => {
         // set to loading
         this.loading = true;

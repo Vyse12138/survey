@@ -22,7 +22,7 @@ export default {
   props: {
     body: String,
     isCompulsory: Number,
-    id: String,
+    id: Number,
     unfinished: Boolean
   },
   methods: {

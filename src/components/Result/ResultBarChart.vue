@@ -20,7 +20,7 @@ export default {
   props: {
     question: String,
     items: Array,
-    id: String
+    id: Number
   },
   data() {
     return {

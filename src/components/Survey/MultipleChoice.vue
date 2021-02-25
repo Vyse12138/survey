@@ -66,7 +66,7 @@ export default {
     body: String,
     isCompulsory: Number,
     items: Array,
-    id: String,
+    id: Number,
     unfinished: Boolean
   },
   computed: {
