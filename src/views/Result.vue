@@ -1,6 +1,6 @@
 <template>
   <!-- results page -->
-  <div class="result" v-if="securityCheck()">
+  <div class="result">
     <div class="loading" v-if="loading">
       <h1>Loading...</h1>
     </div>
@@ -45,10 +45,10 @@ export default {
     ResultPieChart,
     ResultBarChart
   },
-  props: {
-    surveyID: String,
-    securityKey: String
-  },
+  // props: {
+  //   surveyID: String,
+  //   securityKey: String
+  // },
   data() {
     return {
       //response data
@@ -63,16 +63,16 @@ export default {
       invalidCount: 0
     };
   },
-  methods: {
-    //security check
-    securityCheck() {
-      if (this.securityKey.match(/kyle/)) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-  },
+  // methods: {
+  //   //security check
+  //   securityCheck() {
+  //     if (this.securityKey.match(/kyle/)) {
+  //       return true;
+  //     } else {
+  //       return false;
+  //     }
+  //   }
+  // },
   created() {
     // fetching data from api
     axios
@@ -161,9 +161,17 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
+body {
+  background-color: #f0f2e8;
+}
 // result page styling
 .result {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
   width: 60%;
   margin-left: auto;
   margin-right: auto;

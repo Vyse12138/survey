@@ -2,48 +2,53 @@
   <!-- survey page -->
   <div class="survey">
     <!-- front image -->
-    <div class="frontImg" />
+    <div v-if="gratitude">
+      <h1>Thank you!</h1>
+    </div>
+    <div v-else>
+      <div class="frontImg" />
 
-    <!-- loading and error indicator section -->
-    <h2 class="loading" v-if="loading">Loading...</h2>
-    <h2 class="loading" v-if="error">There was some error...</h2>
+      <!-- loading and error indicator section -->
+      <h2 class="loading" v-if="loading">Loading...</h2>
+      <h2 class="loading" v-if="error">There was some error...</h2>
 
-    <!-- survey section -->
-    <div v-if="!loading && !error">
-      <!-- survey heading section -->
-      <div class="heading" v-if="!loading && !error">
-        <h1>{{ data.surveyName }}</h1>
-        <h3>{{ data.description }}</h3>
+      <!-- survey section -->
+      <div v-if="!loading && !error">
+        <!-- survey heading section -->
+        <div class="heading" v-if="!loading && !error">
+          <h1>{{ data.surveyName }}</h1>
+          <h3>{{ data.description }}</h3>
+        </div>
+
+        <!-- question section -->
+        <div v-for="question in data.questions" v-bind:key="question.id">
+          <!-- multiple choice questions -->
+          <MultipleChoice
+            v-if="question.items.length > 0"
+            @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
+            @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
+            :body="question.body"
+            :isCompulsory="question.isCompulsory"
+            :items="question.items"
+            :id="question.id"
+            :unfinished="unfinished[question.id]"
+          />
+          <!-- open ended questions -->
+          <OpenEnded
+            v-if="question.items.length === 0"
+            @saveAnswer="saveAnswer"
+            :id="question.id"
+            :body="question.body"
+            :isCompulsory="question.isCompulsory"
+            :unfinished="unfinished[question.id]"
+          />
+        </div>
+
+        <!-- show submit button when not loading and no error -->
+        <button class="submit" @click.prevent="submitSurvey">
+          submit
+        </button>
       </div>
-
-      <!-- question section -->
-      <div v-for="question in data.questions" v-bind:key="question.id">
-        <!-- multiple choice questions -->
-        <MultipleChoice
-          v-if="question.items.length > 0"
-          @saveAnswerWithSingleItem="saveAnswerWithSingleItem"
-          @saveAnswerWithMultipleItems="saveAnswerWithMultipleItems"
-          :body="question.body"
-          :isCompulsory="question.isCompulsory"
-          :items="question.items"
-          :id="question.id"
-          :unfinished="unfinished[question.id]"
-        />
-        <!-- open ended questions -->
-        <OpenEnded
-          v-if="question.items.length === 0"
-          @saveAnswer="saveAnswer"
-          :id="question.id"
-          :body="question.body"
-          :isCompulsory="question.isCompulsory"
-          :unfinished="unfinished[question.id]"
-        />
-      </div>
-
-      <!-- show submit button when not loading and no error -->
-      <button class="submit" @click.prevent="submitSurvey">
-        submit
-      </button>
     </div>
   </div>
 </template>
@@ -85,7 +90,8 @@ export default {
       loading: true,
       error: false,
       //indicator for unfinished compulsory questions
-      unfinished: []
+      unfinished: [],
+      gratitude: false
     };
   },
   created() {
@@ -175,22 +181,32 @@ export default {
         .post("url goes here", this.data)
         .then(() => {
           // go to gratitude page
-          this.$router.push("/gratitude");
+          // this.$router.push("/gratitude");
+          this.gratitude = true;
         })
         .catch(() => {
           // testing upload failed
           console.log(this.data);
           alert("submit failed");
-          this.$router.push("/gratitude");
+          // this.$router.push("/gratitude");
+          this.gratitude = true;
         });
     }
   }
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
+body {
+  background-color: #f0f2e8;
+}
 // survey page
 .survey {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
