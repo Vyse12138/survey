@@ -3,7 +3,7 @@
   <div class="survey">
     <!-- front image -->
     <div v-if="gratitude">
-      <h1>Thank you!</h1>
+      <h1>Thank you for completing the survey!</h1>
     </div>
     <div v-else>
       <div class="frontImg" />
@@ -107,6 +107,9 @@ export default {
       .then(response => {
         // assigning data
         this.data = response.data;
+        if (this.data.isCompleted) {
+          this.gratitude = true;
+        }
       })
       .catch(() => {
         // show error message
