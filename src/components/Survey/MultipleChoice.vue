@@ -21,6 +21,7 @@
         <td>
           <input
             type="radio"
+            :checked="option === getFirstItemAnswer"
             :value="option"
             :name="id"
             @click="saveAnswerWithSingleItem"
@@ -48,6 +49,7 @@
           <!-- binding input id, name and value -->
           <input
             type="radio"
+            :checked="option == item.answer"
             :id="item.name"
             :value="option"
             :name="id + '-' + item.name"
@@ -75,6 +77,9 @@ export default {
     },
     getItems() {
       return this.items;
+    },
+    getFirstItemAnswer() {
+      return this.items[0].answer;
     }
   },
   methods: {
@@ -89,6 +94,11 @@ export default {
         e.target.id,
         e.target.value
       );
+    },
+    checkAnswer(e) {
+      console.log(e.target)
+      e.target.setAttribute('checked')
+      return false;
     }
   }
 };
