@@ -102,7 +102,7 @@ export default {
     // -----------------------
     // fetching data from api
     axios
-      // .get(`https://www.a.com/api/${guid}`)
+      // .get(`/api/userSurvey${guid}`)
       .get("https://run.mocky.io/v3/d61f43dc-4082-4b03-b05e-efdfeb0a2ded")
       .then(response => {
         // assigning data
@@ -181,6 +181,7 @@ export default {
       this.data.isCompleted = 1;
       // post answers to server
       axios
+        // .post("/api/userSurvey", this.data)
         .post("url goes here", this.data)
         .then(() => {
           // go to gratitude page
