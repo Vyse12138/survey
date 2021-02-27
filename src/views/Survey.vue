@@ -41,6 +41,7 @@
             :body="question.body"
             :isCompulsory="question.isCompulsory"
             :unfinished="unfinished[question.id]"
+            :answer="question.answer"
           />
         </div>
 
@@ -68,8 +69,11 @@ export default {
     return {
       //response data with template data type
       data: {
+        uniqueID: "",
+        surveyID: "",
         surveyName: "",
         description: "",
+        email: null,
         isCompleted: 0,
         questions: [
           {
@@ -103,7 +107,9 @@ export default {
     // fetching data from api
     axios
       // .get(`/api/userSurvey${guid}`)
-      .get("https://run.mocky.io/v3/d61f43dc-4082-4b03-b05e-efdfeb0a2ded")
+      // mockUnfinishedQuestion: https://run.mocky.io/v3/16282fa7-5087-4ef5-938c-24db50727c51
+      // mockEmptyQuestion: https://run.mocky.io/v3/d61f43dc-4082-4b03-b05e-efdfeb0a2ded
+      .get("https://run.mocky.io/v3/16282fa7-5087-4ef5-938c-24db50727c51")
       .then(response => {
         // assigning data
         this.data = response.data;

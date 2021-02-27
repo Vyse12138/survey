@@ -12,25 +12,39 @@
     </div>
 
     <!-- input area -->
-    <textarea class="input" rows="10" @keyup="saveAnswer" />
+    <textarea
+      class="input"
+      rows="10"
+      @keyup="saveAnswer"
+      v-model="answerTemp"
+    />
   </div>
 </template>
 
 <script>
 export default {
   name: "OpenEnded",
+  data() {
+    return {
+      answerTemp: ""
+    };
+  },
   props: {
     body: String,
     isCompulsory: Number,
     id: Number,
-    unfinished: Boolean
+    unfinished: Boolean,
+    answer: String
   },
   methods: {
     // update answer
     saveAnswer(e) {
       this.$emit("saveAnswer", this.id, e.target.value);
     }
-  }
+  },
+  mounted() {
+    this.answerTemp = this.answer;
+  },
 };
 </script>
 
