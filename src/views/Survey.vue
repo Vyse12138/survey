@@ -5,7 +5,13 @@
     <div v-if="gratitude">
       <h1>Thank you for completing the survey!</h1>
     </div>
-    <div v-else>
+    <div v-if="saved">
+      <h1>Please come back to it later!</h1>
+      <button class="submit continue" @click.prevent="refresh">
+        CONTINUE
+      </button>
+    </div>
+    <div v-if="!gratitude && !saved">
       <div class="frontImg" />
 
       <!-- loading and error indicator section -->
@@ -44,10 +50,13 @@
             :answer="question.answer"
           />
         </div>
-
+        <!-- show save button when not loading and no error -->
+        <button class="submit save" @click.prevent="saveSurvey">
+          SAVE
+        </button>
         <!-- show submit button when not loading and no error -->
         <button class="submit" @click.prevent="submitSurvey">
-          submit
+          SUBMIT
         </button>
       </div>
     </div>
@@ -95,7 +104,8 @@ export default {
       error: false,
       //indicator for unfinished compulsory questions
       unfinished: [],
-      gratitude: false
+      gratitude: false,
+      saved: false
     };
   },
   created() {
@@ -146,6 +156,28 @@ export default {
       this.data.questions.find(e => e.id === questionID).answer = value;
     },
 
+    // method to refresh page
+    refresh() {
+      window.location.reload();
+    },
+
+    // function to save Survey
+    saveSurvey() {
+      // post answers to server
+      axios
+        .post("/api/userSurvey", this.data)
+        .then(() => {
+          // this.$router.push("/gratitude");
+          this.saved = true;
+        })
+        .catch(() => {
+          // testing upload failed
+          console.log(this.data);
+          alert("submit failed");
+          // this.$router.push("/gratitude");
+          this.saved = true;
+        });
+    },
     // function to post data
     submitSurvey() {
       // input validation to ensure every compulsory question is answered
@@ -187,8 +219,7 @@ export default {
       this.data.isCompleted = 1;
       // post answers to server
       axios
-        // .post("/api/userSurvey", this.data)
-        .post("url goes here", this.data)
+        .post("/api/userSurvey", this.data)
         .then(() => {
           // go to gratitude page
           // this.$router.push("/gratitude");
@@ -248,6 +279,7 @@ body {
   }
   // submit button
   .submit {
+    width: 150px;
     display: inline-block;
     background-color: #4caf50;
     box-shadow: 0 8px 0 #999;
@@ -269,6 +301,21 @@ body {
       background-color: #3e8e41;
       transform: translateY(4px);
     }
+  }
+  .save {
+    width: 150px;
+    background-color: red;
+    &:hover {
+      background-color: #c50000;
+    }
+    &:active {
+      box-shadow: 0 5px #666;
+      background-color: #c50000;
+      transform: translateY(4px);
+    }
+  }
+  .continue {
+    width: auto;
   }
 }
 // responsive design
