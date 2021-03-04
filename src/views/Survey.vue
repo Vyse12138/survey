@@ -6,7 +6,10 @@
       <h1>Thank you for completing the survey!</h1>
     </div>
     <div v-if="saved">
-      <h1>Please come back to it later!</h1>
+      <h1>
+        Draft saved successfully. Please click the link to finish the survey
+        later!
+      </h1>
       <button class="submit continue" @click.prevent="refresh">
         CONTINUE
       </button>
