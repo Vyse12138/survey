@@ -19,7 +19,9 @@
 
       <!-- loading and error indicator section -->
       <h2 class="loading" v-if="loading">Loading...</h2>
-      <h2 class="loading" v-if="error">There was some error...</h2>
+      <h2 class="loading" v-if="error">
+        An error occured when loading survey data, please contact agriview.
+      </h2>
 
       <!-- survey section -->
       <div v-if="!loading && !error">
@@ -117,7 +119,6 @@ export default {
   created() {
     let guid = window.location.pathname.substring(1);
     console.log(guid);
-    // -----------------------
     // fetching data from api
     axios
       // .get(`/api/userSurvey${guid}`)

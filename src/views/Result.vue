@@ -1,9 +1,11 @@
 <template>
   <!-- results page -->
   <div class="result">
-    <div class="loading" v-if="loading">
-      <h1>Loading...</h1>
-    </div>
+    <h1 class="loading" v-if="loading">Loading...</h1>
+    <h1 class="loading" v-if="error">
+      An error occured when loading survey data, please contact agriview.
+    </h1>
+
     <!-- survey heading section -->
     <div class="heading" v-if="!loading">
       <div class="voteCount">
