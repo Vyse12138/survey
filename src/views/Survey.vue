@@ -7,8 +7,9 @@
     </div>
     <div v-if="saved">
       <h1>
-        Draft saved successfully. Please click the link to finish the survey
-        later!
+        Draft saved successfully.
+        <br />
+        Please click the link to finish the survey later!
       </h1>
       <button class="submit continue" @click.prevent="refresh">
         CONTINUE
