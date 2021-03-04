@@ -1,26 +1,27 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Result from "../views/Result.vue";
 import Survey from "../views/Survey.vue";
-const routes = [
-  {
-    path: "/",
-    component: Survey
-  },
-  {
-    path: "/result/:surveyID/:securityKey",
-    component: Result,
-    props: true
-  },
-  {
-    path: "/gratitude",
-    // route level code-splitting, lazy-loaded when visited.
-    component: () => import("../views/Gratitude.vue")
-  }
-];
+import ErrorPage from "../views/ErrorPage.vue";
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes
+  history: createWebHistory(),
+  routes: [
+    {
+      path: "/:guid",
+      component: Survey,
+      props: true
+    },
+    {
+      path: "/result/:surveyID/:securityKey",
+      component: Result,
+      props: true
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      component: ErrorPage,
+      props: true
+    }
+  ]
 });
 
 export default router;

@@ -74,6 +74,9 @@ export default {
     MultipleChoice,
     OpenEnded
   },
+  props: {
+    guid: String
+  },
   data() {
     return {
       //response data with template data type
@@ -109,10 +112,8 @@ export default {
     };
   },
   created() {
-    // get current url
-    // let currentURL = new URL(window.location.href);
-    // let guid = currentURL.pathname;
-    // console.log(guid);
+    let guid = window.location.pathname.substring(1);
+    console.log(guid);
     // -----------------------
     // fetching data from api
     axios

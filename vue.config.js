@@ -1,7 +1,5 @@
 module.exports = {
-  publicPath: "/",
-  outputDir: "../wwwroot",
-  filenameHashing: true
+  outputDir: "../wwwroot"
   // pages: {
   //   index: {
   //     entry: "src/main.js",

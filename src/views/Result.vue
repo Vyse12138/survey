@@ -45,10 +45,10 @@ export default {
     ResultPieChart,
     ResultBarChart
   },
-  // props: {
-  //   surveyID: String,
-  //   securityKey: String
-  // },
+  props: {
+    surveyID: String,
+    securityKey: String
+  },
   data() {
     return {
       //response data
@@ -63,16 +63,16 @@ export default {
       invalidCount: 0
     };
   },
-  // methods: {
-  //   //security check
-  //   securityCheck() {
-  //     if (this.securityKey.match(/kyle/)) {
-  //       return true;
-  //     } else {
-  //       return false;
-  //     }
-  //   }
-  // },
+  methods: {
+    //security check
+    securityCheck() {
+      if (this.securityKey.match(/kyle/)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  },
   created() {
     // fetching data from api
     axios

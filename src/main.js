@@ -1,4 +1,6 @@
 import { createApp } from "vue";
-import Survey from "./views/Survey.vue";
-
-createApp(Survey).mount("#app");
+import App from "./App.vue";
+import router from "./router";
+createApp(App)
+  .use(router)
+  .mount("#app");
