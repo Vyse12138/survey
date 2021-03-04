@@ -96,8 +96,8 @@ export default {
       );
     },
     checkAnswer(e) {
-      console.log(e.target)
-      e.target.setAttribute('checked')
+      console.log(e.target);
+      e.target.setAttribute("checked");
       return false;
     }
   }

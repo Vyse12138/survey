@@ -44,7 +44,7 @@ export default {
   },
   mounted() {
     this.answerTemp = this.answer;
-  },
+  }
 };
 </script>
 

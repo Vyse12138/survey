@@ -12,11 +12,7 @@
       "isCompulsory": 1,
       "items": [
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": "very pool"
         }
       ]
@@ -27,13 +23,7 @@
       "isCompulsory": 1,
       "items": [
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average",
-            "good",
-            "very good"
-          ],
+          "options": ["very pool", "poor", "average", "good", "very good"],
           "answer": "good"
         }
       ]
@@ -44,29 +34,17 @@
       "isCompulsory": 1,
       "items": [
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": "poor",
           "name": "shad"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": "average",
           "name": "bar"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": "average",
           "name": "trap"
         }
@@ -78,56 +56,32 @@
       "isCompulsory": 1,
       "items": [
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": "average",
           "name": "shad"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": "average",
           "name": "bar"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": null,
           "name": "foo"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": null,
           "name": "cat"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": null,
           "name": "dog"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": "poor",
           "name": "boy"
         }
@@ -139,29 +93,17 @@
       "isCompulsory": 1,
       "items": [
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": null,
           "name": "shad"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": null,
           "name": "bar"
         },
         {
-          "options": [
-            "very pool",
-            "poor",
-            "average"
-          ],
+          "options": ["very pool", "poor", "average"],
           "answer": null,
           "name": "trap"
         }
@@ -173,10 +115,7 @@
       "isCompulsory": 0,
       "items": [
         {
-          "options": [
-            "very pool",
-            "poor"
-          ],
+          "options": ["very pool", "poor"],
           "answer": null
         }
       ]
@@ -187,26 +126,17 @@
       "isCompulsory": 0,
       "items": [
         {
-          "options": [
-            "very pool",
-            "poor"
-          ],
+          "options": ["very pool", "poor"],
           "answer": null,
           "name": "shad"
         },
         {
-          "options": [
-            "very pool",
-            "poor"
-          ],
+          "options": ["very pool", "poor"],
           "answer": null,
           "name": "bar"
         },
         {
-          "options": [
-            "very pool",
-            "poor"
-          ],
+          "options": ["very pool", "poor"],
           "answer": null,
           "name": "trap"
         }
