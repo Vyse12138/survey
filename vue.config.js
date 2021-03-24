@@ -1,5 +1,5 @@
 module.exports = {
-  // outputDir: "../wwwroot"
+  outputDir: "../wwwroot"
   // pages: {
   //   index: {
   //     entry: "src/main.js",
